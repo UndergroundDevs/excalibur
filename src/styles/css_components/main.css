@@ -65,6 +65,7 @@ section#home img {
   width: 100%;
 }
 
+/*===============================*/
 section#home-part-two {
   display: grid;
   grid-template-columns: 1fr 0;
@@ -74,7 +75,6 @@ section#home-part-two {
   width: 100%;
 }
 
-/*===============================*/
 section#home-part-two img {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -168,7 +168,7 @@ section#about .container-title h2 {
 /*===============================*/
 section#services {
   width: 100%;
-  height: 100vh;
+  height: auto;
   padding: 3rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
@@ -188,6 +188,7 @@ section#services .container-services {
   display: grid;
   grid-template-columns: 1fr 0 0 0;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 50px;
   justify-items: center;
 }
 
@@ -197,6 +198,14 @@ section#services .container-services .service-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+section#services .container-services h3 {
+  color: #455A64;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 section#services .container-services .service-2 {
@@ -221,6 +230,218 @@ section#services .container-services .service-4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/*===============================*/
+section#client {
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #142766;
+}
+
+section#client h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+}
+section#client .container-carosel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+section#partnerships {
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+section#partnerships h1 {
+  color: #27427E;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+section#partnerships .container-partnerships {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section#partnerships .container-partnerships img {
+  height: 100px;
+  width: auto;
+  object-fit: cover;
+  margin-top: 5rem;
+}
+
+/*===============================*/
+section#contact {
+  width: 100%;
+  height: auto;
+  padding: 3rem 1rem 1rem 1rem;
+  background-color: #142766;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#contact .container-contact-title {
+  width: 100%;
+  height: auto;
+}
+
+section#contact .container-contact-title h1 {
+  color: #FFF;
+  text-align: left;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+section#contact .container-contact-title h2 {
+  color: #FFF;
+  text-align: left;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+section#contact form {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  max-width: 438px;
+}  
+
+section#contact form fieldset {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 20px;
+  align-items: center;
+}
+
+section#contact form fieldset label {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #455A64;
+  margin-top: 2rem;
+  align-self: flex-start;
+}
+
+section#contact form fieldset input {
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  background: rgba(40, 46, 51, 0.31);
+  border-radius: 20px;
+  margin-top: 5px;
+  padding: 10px 20px 10px 20px;
+}
+
+section#contact form fieldset textarea {
+  width: 100% !important;
+  height: 200px !important;
+  max-height: 200px;
+  background: rgba(40, 46, 51, 0.31);
+  border-radius: 20px;
+  margin-top: 5px !important;
+  padding: 20px;
+}
+
+section#contact form fieldset button {
+  width: 186px;
+  height: 30px;
+  border: 2px solid #142766;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+@media (min-width: 728px) {
+  /*===============================*/
+  section#home-part-two {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 3rem 1rem 1rem 1rem;
+    margin-bottom: 20vh;
+    height: auto;
+    width: 100%;
+  }
+
+  section#home-part-two img {
+    grid-column: auto;
+    grid-row: 1/3;
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  section#home-part-two .description-section {
+    grid-column: auto;
+    grid-row: 1/3;
+  }
+
+  section#partnerships {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#partnerships .container-partnerships {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  section#partnerships .container-partnerships img {
+    height: 100px;
+    width: auto;
+  }
+
+  
+  /*===============================*/
+  section#contact {
+    padding: 3rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  section#contact .container-contact-title {
+    width: 450px;
+    height: auto;
+    margin-right: 30px;
+  }
+
+  section#contact form {
+    margin-top: 0;
+  }  
+
+  section#contact form fieldset label {
+    margin-top: 1rem;
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -258,4 +479,21 @@ section#services .container-services .service-4 {
     width: 100%;
     height: 100%;
   }
+
+  section#contact form fieldset {
+    padding: 2rem;
+  }
+
+  section#contact .container-contact-title {
+    width: 400px;
+  }
+
+  section#contact .container-contact-title h1 {
+    font-size: 5rem;
+  }
+
+  section#contact .container-contact-title h2 {
+    font-size: 1.5rem;
+  }
+
 }

@@ -10,6 +10,8 @@ import imageGestão from '../assets/Vector_gestao.svg';
 import imageGestão1 from '../assets/Vetor-2.svg';
 import imageGestão2 from '../assets/Vetor-3.svg';
 import service from '../assets/service.svg';
+import cieeImage from '../assets/CIEE.png';
+import quantoSobraImage from '../assets/quanto_sobra.png'
 
 export default function Home() {
   const [ isOpenMenu, setIsOpenMenu ] = useState(false);
@@ -23,7 +25,7 @@ export default function Home() {
   }
 
   function scrollToPage(position: number) {
-    window.scroll({behavior: "smooth", top: position });
+    window.scroll({behavior: "smooth", top: (position - 48) });
   }
 
   useEffect(() => {
@@ -100,6 +102,7 @@ export default function Home() {
         <img src={imageGestão} alt="reunião entre dirigentes com slide no fundo"/>
       </section>
       <section id="home-part-two">
+        <img src={imageGestão1} alt="reunião entre dirigentes com slide no fundo"/>
         <div className="description-section">
           <h1>A comunicação certa para o seu produto</h1>
           <h2>
@@ -109,7 +112,6 @@ export default function Home() {
           </h2>
           <a href="#">Encontre seus clientes</a>
         </div>
-        <img src={imageGestão1} alt="reunião entre dirigentes com slide no fundo"/>
       </section>
       <section id="home-part-two">
         <div className="description-section">
@@ -148,7 +150,7 @@ export default function Home() {
             <h3>Marketing & Design Gáfico</h3>
           </div>
           <div className="service-3">
-            <img src="" alt=""/>
+            <img src={service} alt=""/>
             <h3>Contabilidade & Investimento</h3>
           </div>
           <div className="service-4">
@@ -158,12 +160,42 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="partnerships">
+      <section id="client">
+        <h1>Nossos Clientes</h1>
+        <div className="container-carosel">
+          
+        </div>
+      </section>
 
+      <section id="partnerships">
+        <h1>Nosssos Parceiros</h1>
+        <div className="container-partnerships">
+          <img src={quantoSobraImage} alt="quanto sobra"/>
+          <img src={cieeImage} alt="Centro de integração Empresa-Escola"/>
+        </div>
       </section>
 
       <section id="contact">
+        <div className="container-contact-title">
+          <h1>Entre em contato</h1>
+          <h2>
+            Preencha os dados ao lado pra gente
+            se conhecer melhor e marcar uma conversa 😉
+          </h2>
+        </div>
+        <form action="/">
+          <fieldset>
+            <label htmlFor="name">Como devemos te chamar?</label>
+            <input type="text" name="name" id="name"/>
 
+            <label htmlFor="email">Como devemos te chamar?</label>
+            <input type="email" name="email" id="email"/>
+
+            <label htmlFor="body">Como devemos te chamar?</label>
+            <textarea name="body" id="body" cols={10} rows={10} />
+            <button>Enviar</button>
+          </fieldset>
+        </form>
       </section>
       
       <Buttom
