@@ -19,6 +19,7 @@ export default function Home() {
 
   const myNav = useRef<HTMLBaseElement>(null);
   const coloHeader = useRef<HTMLBaseElement>(null);
+  const home = useRef<HTMLAnchorElement>(null);
 
   function openMenu () {
     setIsOpenMenu(!isOpenMenu)
@@ -30,6 +31,16 @@ export default function Home() {
 
   useEffect(() => {
     const tagAtribute = myNav.current.querySelectorAll('a[href^="P"]');
+    home.current.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      const idAncora = home.current.getAttribute('href');
+      const id = idAncora.split('-');
+
+      const section = document.querySelector(`#${id[1]}`) as HTMLBaseElement;
+
+      window.scroll({behavior: "smooth", top: (section.offsetTop - 48) });
+    });
 
     tagAtribute.forEach(item => {
       item.addEventListener('click', (event) => {
@@ -68,8 +79,10 @@ export default function Home() {
 
       <Header isColoraBlue={isBlue} ref={coloHeader}>
         <div className="container-logo">
-          <img src={logoAndro} alt="Águia em branco com um fundo azul"/>
-          <h1>Andro</h1>
+          <a href="P-home" ref={home}>
+            <img src={logoAndro} alt="Águia em branco com um fundo azul"/>
+            <h1>Andro</h1>
+          </a>
         </div>
         <Nav open={isOpenMenu} ref={myNav}>
           <a href="P-services">serviços</a>
@@ -90,19 +103,18 @@ export default function Home() {
       </section>
 
       <section id="home-part-two">
-        <div className="description-section">
-          <h1>A melhor gestão para o seu projeto</h1>
-          <h2>
+        <img src={imageGestão} alt="reunião entre dirigentes com slide no fundo"/>
+        <div className="description-section description-section-align-to-right">
+          <h1 className="align-text-to-right">A melhor gestão para o seu projeto</h1>
+          <h2 className="align-text-to-right">
             Impulsionamos o seu sonho através da
             análise e planejamento alinhado as
             demandas do mercado.
           </h2>
           <a href="#">impusione seu negócio</a>
         </div>
-        <img src={imageGestão} alt="reunião entre dirigentes com slide no fundo"/>
       </section>
       <section id="home-part-two">
-        <img src={imageGestão1} alt="reunião entre dirigentes com slide no fundo"/>
         <div className="description-section">
           <h1>A comunicação certa para o seu produto</h1>
           <h2>
@@ -112,20 +124,21 @@ export default function Home() {
           </h2>
           <a href="#">Encontre seus clientes</a>
         </div>
+        <img src={imageGestão1} alt="reunião entre dirigentes com slide no fundo"/>
       </section>
       <section id="home-part-two">
-        <div className="description-section">
-          <h1>
+        <img src={imageGestão2} alt="reunião entre dirigentes com slide no fundo"/>
+        <div className="description-section description-section-align-to-right">
+          <h1 className="align-text-to-right">
             Devolvemos o seu
             controle financeiro
           </h1>
-          <h2>
+          <h2 className="align-text-to-right">
             Gerenciamos suas finanças, alcançando o melhor desempenho
             financeiro, devolvendo o controle do seu dinheiro.
           </h2>
           <a href="#">Recupere o seu controle</a>
         </div>
-        <img src={imageGestão2} alt="reunião entre dirigentes com slide no fundo"/>
       </section>
 
       <section id="about">
@@ -143,19 +156,19 @@ export default function Home() {
         <div className="container-services">
           <div className="service-1">
             <img src={service} alt=""/>
-            <h3>Recrutamnto & Gerenciamento</h3>
+            <h3>Recrutamnto & <br/>Gerenciamento</h3>
           </div>
           <div className="service-2">
             <img src={service} alt=""/>
-            <h3>Marketing & Design Gáfico</h3>
+            <h3>Marketing & <br/>Design Gáfico</h3>
           </div>
           <div className="service-3">
             <img src={service} alt=""/>
-            <h3>Contabilidade & Investimento</h3>
+            <h3>Contabilidade & <br/>Investimento</h3>
           </div>
           <div className="service-4">
             <img src={service} alt=""/>
-            <h3>Controle & Qualidade</h3>
+            <h3>Controle & <br/>Qualidade</h3>
           </div>
         </div>
       </section>

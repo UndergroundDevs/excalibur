@@ -14,8 +14,16 @@ export const Header = styled.header<{ isColoraBlue: boolean }>`
     justify-content: center;
     align-items: center;
   }
+
+  .container-logo a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
   
-  .container-logo h1 {
+  .container-logo a h1 {
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
