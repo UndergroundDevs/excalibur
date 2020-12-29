@@ -3,7 +3,7 @@ const withImages = require('next-images');
 const distDir = "build";
 
 module.exports = withImages({
-  distDir:'build',
+  esModule: true,
   webpack(config, option) {
     return config
   }
