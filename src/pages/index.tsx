@@ -10,7 +10,7 @@ import imageGestão from '../assets/Vector_gestao.svg';
 import imageGestão1 from '../assets/Vetor-2.svg';
 import imageGestão2 from '../assets/Vetor-3.svg';
 import service from '../assets/service.svg';
-import cieeImage from '../assets/CIEE.png';
+import cieeImage from '../assets/ciee.png';
 import quantoSobraImage from '../assets/quanto_sobra.png'
 
 export default function Home() {

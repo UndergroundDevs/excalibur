@@ -1,5 +1,10 @@
-const widthImaes = require('next-images');
+const withImages = require('next-images');
 
-module.exports = widthImaes({
-  esModule: true,
+const distDir = "build";
+
+module.exports = withImages({
+  distDir:'build',
+  webpack(config, option) {
+    return config
+  }
 });
