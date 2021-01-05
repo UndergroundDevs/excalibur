@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "start": "next start -p $PORT"
+    "start": "next start -p $PORT",
+    "build": "next build"
   },
   "dependencies": {
     "@types/react-slick": "^0.23.4",
