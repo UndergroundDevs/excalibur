@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "next build",
     "dev": "next dev",
-    "start": "next start -p $PORT",
-    "build": "next build"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@types/react-slick": "^0.23.4",
