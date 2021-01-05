@@ -1,6 +1,12 @@
 module.exports = {
-  presets: ["next/babel"],
-  plugins: [
+  "presets": [
+    [
+      "next/babel",
+      {
+        "react-slick": { "ssr": true }
+      }
+    ]
+  ],  plugins: [
     ["styled-components", { "ssr": true }],
   ]
 };

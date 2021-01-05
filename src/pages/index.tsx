@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { useEffect, useRef } from 'react';
 import { Nav, Header, Buttom } from '../styles/header';
 
@@ -11,15 +11,26 @@ import imageGestão1 from '../assets/Vetor-2.svg';
 import imageGestão2 from '../assets/Vetor-3.svg';
 import service from '../assets/service.svg';
 import cieeImage from '../assets/ciee.png';
-import quantoSobraImage from '../assets/quanto_sobra.png'
+import quantoSobraImage from '../assets/quanto_sobra.png';
+import parceiro1 from '../assets/parceiro1.svg';
+import parceiro2 from '../assets/parceiro2.svg';
+import logoFacebook from '../assets/facebook.png';
+import logoInstagram from '../assets/instagram.png';
+import logoLinkedin from '../assets/linkedin.png';
+import logoMail from '../assets/mail.png';
+import { Console } from 'console';
 
 export default function Home() {
   const [ isOpenMenu, setIsOpenMenu ] = useState(false);
   const [ isBlue, setIsBlue ] = useState(false);
+  const [ scrollNumber, setScrollNumber ] = useState(0);
 
   const myNav = useRef<HTMLBaseElement>(null);
   const coloHeader = useRef<HTMLBaseElement>(null);
   const home = useRef<HTMLAnchorElement>(null);
+  const caroselRef = useRef<HTMLDivElement>(null);
+  const caroselRef2 = useRef<HTMLDivElement>(null);
+  const ancorCopy = useRef<HTMLDivElement>(null);
 
   function openMenu () {
     setIsOpenMenu(!isOpenMenu)
@@ -28,6 +39,23 @@ export default function Home() {
   function scrollToPage(position: number) {
     window.scroll({behavior: "smooth", top: (position - 48) });
   }
+
+  useEffect(()=> {
+    const color = coloHeader.current.style;
+    color.backgroundColor = "#222967"
+
+    window.addEventListener('scroll', () => {
+      setScrollNumber(window.scrollY);
+
+      if (scrollNumber >= 90 ) {
+        color.backgroundColor = "#222967"
+      }
+
+      if (scrollNumber <= 90 ) {
+        color.backgroundColor = "transparent"
+      }
+    });
+  }, [scrollNumber]);
 
   useEffect(() => {
     const tagAtribute = myNav.current.querySelectorAll('a[href^="P"]');
@@ -54,21 +82,78 @@ export default function Home() {
         scrollToPage(section.offsetTop);
 
       });
-    })
-
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY >= 90 ) {
-        coloHeader.current.style.background = "#222967"
-      }
-
-      if (window.scrollY <= 90 ) {
-        coloHeader.current.style.background = "transparent"
-      }
     });
+
+    const slide = caroselRef.current;
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slide.addEventListener('mousedown', (event) => {
+      isDown = true;
+      slide.classList.add('active');
+      startX = event.pageX - slide.offsetLeft;
+      scrollLeft = slide.scrollLeft;
+    });
+
+    slide.addEventListener('mouseleave', () => {
+      isDown = false;
+      slide.classList.remove('active');
+    });
+
+    slide.addEventListener('mouseup', () => {
+      isDown = false;
+      slide.classList.remove('active');
+    });
+
+    slide.addEventListener('mousemove', (e) => {
+      if(!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slide.offsetLeft;
+      const walk = (x - startX) * 2.5; //scroll-fast
+      slide.scrollLeft = scrollLeft - walk;
+    });
+
+    const slide2 = caroselRef2.current;
+
+    let isDown2 = false;
+    let startX2;
+    let scrollLeft2;
+
+    slide2.addEventListener('mousedown', (event) => {
+      isDown2 = true;
+      slide2.classList.add('active');
+      startX2 = event.pageX - slide2.offsetLeft;
+      scrollLeft2 = slide2.scrollLeft;
+    });
+
+    slide2.addEventListener('mouseleave', () => {
+      isDown2 = false;
+    });
+
+    slide2.addEventListener('mouseup', () => {
+      isDown2 = false;
+    });
+
+    slide2.addEventListener('mousemove', (e) => {
+      if(!isDown2) return;
+      e.preventDefault();
+      const x = e.pageX - slide2.offsetLeft;
+      const walk = (x - startX2) * 2.5; //scroll-fast
+      slide2.scrollLeft = scrollLeft2 - walk;
+    });
+
   }, []);
+
+  function handleSubmit(event: FormEvent) {
+    event.preventDefault();
+    console.log("Submit")
+  }
+
+  function copyEmail (event: React.MouseEvent) {
+    event.preventDefault();
+  }
 
   return (
     <>
@@ -142,12 +227,56 @@ export default function Home() {
       </section>
 
       <section id="about">
-        <div className="container-about">
-
-        </div>
         <div className="container-title">
-          <h1>Nossa Equipe</h1>
+          <h1>Nossa <br/>Equipe</h1>
           <h2>de profissionais qualificados em fazer seu negócio dar certo.</h2>
+        </div>
+        
+        <div
+          className="container-about"
+          ref={caroselRef}
+        >
+          <div className="we">
+            <div className="image"></div>
+            <h1>Luan Monteiro</h1>
+            <p>
+              Formado em Administração, com ampla experiência no ramo de Designer Visual.
+            </p>
+            <h2>Sócio Diretor De Marketing</h2>
+          </div>
+
+          <div className="we">
+            <div className="image"></div>
+            <h1>Luan Monteiro</h1>
+            <p>
+              Formado em Administração, com ampla experiência no ramo de Designer Visual.
+            </p>
+            <h2>Sócio Diretor De Marketing</h2>
+          </div>
+          <div className="we">
+            <div className="image"></div>
+            <h1>Luan Monteiro</h1>
+            <p>
+              Formado em Administração, com ampla experiência no ramo de Designer Visual.
+            </p>
+            <h2>Sócio Diretor De Marketing</h2>
+          </div>
+          <div className="we">
+            <div className="image"></div>
+            <h1>Luan Monteiro</h1>
+            <p>
+              Formado em Administração, com ampla experiência no ramo de Designer Visual.
+            </p>
+            <h2>Sócio Diretor De Marketing</h2>
+          </div>
+          <div className="we">
+            <div className="image"></div>
+            <h1>Luan Monteiro</h1>
+            <p>
+              Formado em Administração, com ampla experiência no ramo de Designer Visual.
+            </p>
+            <h2>Sócio Diretor De Marketing</h2>
+          </div>
         </div>
       </section>
 
@@ -175,8 +304,49 @@ export default function Home() {
 
       <section id="client">
         <h1>Nossos Clientes</h1>
-        <div className="container-carosel">
-          
+        <div className="container-cliente" ref={caroselRef2}>
+          <div className="container-carosel">
+            <img src={parceiro1} alt="Farma Clin"/>
+            <div className="container-data">
+              <h1>Farma Clin</h1>
+              <h2>Guaratiba</h2>
+            </div>
+            <div className="container-data-1">
+              <p>
+                Vi meu negócio crescer diante dos meus olhos como mágica,
+                recomendo a Andro para todos.
+              </p>
+              <h5> - Rodrigo, Dono das Farmácias</h5>
+            </div>
+          </div>
+          <div className="container-carosel">
+            <img src={parceiro1} alt="Farma Clin"/>
+            <div className="container-data">
+              <h1>Farma Clin</h1>
+              <h2>Guaratiba</h2>
+            </div>
+            <div className="container-data-1">
+              <p>
+                Vi meu negócio crescer diante dos meus olhos como mágica,
+                recomendo a Andro para todos.
+              </p>
+              <h5> - Rodrigo, Dono das Farmácias</h5>
+            </div>
+          </div>
+          <div className="container-carosel">
+            <img src={parceiro1} alt="Farma Clin"/>
+            <div className="container-data">
+              <h1>Farma Clin</h1>
+              <h2>Guaratiba</h2>
+            </div>
+            <div className="container-data-1">
+              <p>
+                Vi meu negócio crescer diante dos meus olhos como mágica,
+                recomendo a Andro para todos.
+              </p>
+              <h5> - Rodrigo, Dono das Farmácias</h5>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -196,7 +366,7 @@ export default function Home() {
             se conhecer melhor e marcar uma conversa 😉
           </h2>
         </div>
-        <form action="/">
+        <form onSubmit={handleSubmit}>
           <fieldset>
             <label htmlFor="name">Como devemos te chamar?</label>
             <input type="text" name="name" id="name"/>
@@ -206,7 +376,7 @@ export default function Home() {
 
             <label htmlFor="body">Como devemos te chamar?</label>
             <textarea name="body" id="body" cols={10} rows={10} />
-            <button>Enviar</button>
+            <button type="submit">Enviar</button>
           </fieldset>
         </form>
       </section>
@@ -219,7 +389,25 @@ export default function Home() {
       </Buttom>
 
       <footer>
-
+        <div className="container">
+          <div className="social-medias">
+            <img src={logoLinkedin} alt="Linkedin" />
+            <a target="_blank" href="https://www.linkedin.com/company/andro-consultoria-assessoria/">@andro-consultoria-assessoria</a>
+          </div>
+          <div className="social-medias">
+            <img src={logoFacebook} alt="Facebook" />
+            <a target="_blank" href="https://www.facebook.com/androconsult">@androconsult</a>
+          </div>
+          <div className="social-medias">
+            <img src={logoInstagram} alt="Instagram" />
+            <a target="_blank" href="https://www.instagram.com/androaac/">@androaac</a>
+          </div>
+          <div className="social-medias">
+            <img src={logoMail} alt="Email" />
+            <a onClick={copyEmail} id="copy" href="comercial@androconsult.com.br">comercial@androconsult.com.br</a>
+          </div>
+        </div>
+        <h1>Todos os direitos reservados pela Andro</h1>
       </footer>
     </>
   )

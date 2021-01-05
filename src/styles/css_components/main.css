@@ -127,26 +127,93 @@ section#home-part-two .description-section a:hover {
 /*===============================*/
 section#about {
   padding: 3rem 1rem 1rem 1rem;
-  max-width: 100%;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #142766;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 section#about .container-about {
+  width: auto;
+  height: 350px;
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 50%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  cursor: pointer;
+}
+
+section#about div.container-about::-webkit-scrollbar {
+  display: none;
+}
+
+/*===============================*/
+section#about .container-about div.we {
+  background-color: #FFFFFF;
+  height: auto;
+  width: 300px;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 0 0;
+  grid-template-rows: auto auto auto auto;
+  justify-items: center;
+  padding: 20px;
+  border-radius: 38px;
+  margin-right: 40px;
+}
+
+section#about .container-about .image {
+  width: 150px;
+  height: 150px;
+  background-color: #27427E;
+  border-radius: 75%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  grid-row: 1/2;
+}
+
+section#about .container-about h1 {
+  grid-row: 2/3;
+  white-space: normal;
+  text-transform: uppercase;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #27427E;
+}
+
+section#about .container-about h2 {
+  grid-row: 3/4;
+  white-space: normal;
+  text-transform: uppercase;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #27427E;
+  transition: opacity .6s;
+}
+
+section#about .container-about p {
+  grid-row: 4/5;
+  white-space: normal;
+  font-family: Fira Sans;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #282E33;
 }
 
 section#about .container-title {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 50%;
+  width: 200px;
+  height: auto;
 }
 
 section#about .container-title h1 {
@@ -244,7 +311,7 @@ section#services .container-services .service-4 {
 /*===============================*/
 section#client {
   width: 100%;
-  height: 100vh;
+  height: auto;
   padding: 3rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
@@ -259,16 +326,93 @@ section#client h1 {
   font-weight: 600;
   font-size: 2rem;
 }
-section#client .container-carosel {
+section#client .container-cliente {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  transition: all 0.2s;
+  will-change: transform;
+  cursor: pointer;
+}
+
+section#client .container-cliente .container-carosel {
+  background-color: #FFFFFF;
+  width: 290px;
+  min-width: 290px;
+  height: 400px;
+  padding: 15px;
+  border-radius: 38px;
+  margin-right: 40px;
+  display: grid;
+  grid-template-columns: 1fr 0;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  margin-top: 1rem;
+  align-content: center;
+}
+
+section#client .container-cliente .container-carosel img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 150px;
+}
+
+section#client .container-cliente .container-carosel .container-data {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+section#client .container-cliente .container-carosel .container-data h1 {
+  color: #27427E;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+section#client .container-cliente .container-carosel .container-data h2 {
+  color: #27427E;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+section#client .container-cliente .container-carosel .container-data-1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+}
+
+section#client .container-cliente .container-carosel .container-data-1 p {
+  font-family: Fira Sans;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: justify;
+  color: #455A64;
+  margin-top: 15px;
+}
+
+section#client .container-cliente .container-carosel .container-data-1 h5 {
+  font-family: Fira Sans;
+  font-weight: 600;
+  font-size: .8rem;
+  text-align: justify;
+  color: #455A64;
+  margin-top: 15px;
 }
 
 section#partnerships {
   width: 100%;
-  height: 100vh;
-  padding: 3rem 1rem 1rem 1rem;
+  height: auto;
+  padding: 3rem 1rem 16rem 1rem;
 }
 
 section#partnerships h1 {
@@ -383,6 +527,54 @@ section#contact form fieldset button {
   box-sizing: border-box;
   border-radius: 30px;
   margin-top: 10px;
+}
+
+footer {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+footer > h1 {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: #27427E;
+  margin-top: 20px;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer .container .social-medias {
+  display: flex;
+  margin-top: 70px;
+  align-items: center;
+}
+
+footer .container .social-medias a {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 22px;
+  color: #474D54;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+footer .container .social-medias a#copy {
+  cursor: default;
+  pointer-events: none;
 }
 
 @media (min-width: 728px) {
@@ -571,12 +763,129 @@ section#contact form fieldset button {
     font-size: 1.3rem;
   }
 
+  section#about {
+    height: calc(100vh - 48px);
+    flex-direction: row;
+    align-items: center;
+  }
+
+  section#about .container-title {
+    min-width: 300px;
+  }
+
+  section#about .container-about {
+    height: 100%;
+    align-items: center;
+  }
+
+  section#about .container-about div.we {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    min-width: 800px !important;
+    min-height: 80%;
+    align-items: center;
+  }
+  
+  section#about .container-about .image {
+    width: 190px;
+    height: 190px;
+    grid-row: 2/3;
+  }
+  
+  section#about .container-about h1 {
+    grid-row: 3/4;
+    margin-left: 20px;
+    font-size: 2rem;
+    align-self: flex-end;
+  }
+  
+  section#about .container-about h2 {
+    grid-row: 4/5;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    align-self: flex-start;
+  }
+  
+  section#about .container-about p {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+
+  section#services {
+    height: 100vh;
+  }
+
   section#services .container-services {
     gap: 0px;
+    height: 100%;
   }
 
   section#services .container-services img {
+    height: 100%;
+    width: 100%;
+  }
+
+  section#client {
+    height: 100vh;
+  }
+
+  section#client .container-cliente {
+    height: 100%;
+  }
+
+  section#client .container-cliente::-webkit-scrollbar {
+    display: none;
+  }
+    
+  section#client .container-cliente .container-carosel {
+    width: 290px;
+    min-width: 800px;
+    height: 80%;
+    display: grid;
+    padding: 40px;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 20px;
+  }
+
+  section#client .container-cliente .container-carosel img {
+    grid-column: 1/2;
+    grid-row: 1/2;
     width: 200px;
+  }
+
+  section#client .container-cliente .container-carosel .container-data {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  section#client .container-cliente .container-carosel .container-data h1 {
+    font-size: 2rem;
+  }
+
+  section#client .container-cliente .container-carosel .container-data h2 {
+    font-size: 1.5rem;
+  }
+
+  section#client .container-cliente .container-carosel .container-data-1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section#client .container-cliente .container-carosel .container-data-1 p {
+    font-size: 2rem;
+  }
+
+  section#client .container-cliente .container-carosel .container-data-1 h5 {
+    font-size: 1rem;
+  }
+
+  section#contact {
+    height: 100vh;
   }
 
   section#contact form {
@@ -598,5 +907,28 @@ section#contact form fieldset button {
 
   section#contact .container-contact-title h2 {
     font-size: 1.5rem;
+  }
+
+  footer {
+    height: auto;
+    padding: 25px;
+    align-items: center;
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer .container .social-medias {
+    display: flex;
+    margin-top: 0;
+    margin-left: 40px;
+    align-items: center;
+  }
+
+  footer .container .social-medias a {
+    margin-left: 5px;
   }
 }

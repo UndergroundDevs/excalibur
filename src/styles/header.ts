@@ -5,6 +5,7 @@ export const Header = styled.header<{ isColoraBlue: boolean }>`
   height: 80px;
   position: fixed;
   background: transparent;
+  z-index: 100;
 
   .container-logo {
     background: linear-gradient(180deg, #222967 66.1%, #27427E 5000.53%);
@@ -37,7 +38,7 @@ export const Header = styled.header<{ isColoraBlue: boolean }>`
     justify-content: space-between;
     align-items: center;
     padding: 0 3rem 0 3rem;
-    transition: 1s;
+    transition: .5s;
 
     .container-logo {
       display: flex;
