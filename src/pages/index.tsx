@@ -10,7 +10,7 @@ import imageGestão from '../assets/Vector_Gestão.png';
 import imageGestão1 from '../assets/Vetor-2.png';
 import imageGestão2 from '../assets/Vetor-3.png';
 import service from '../assets/services.png';
-import cieeImage from '../assets/ciee.png';
+import cieeImage from '../assets/Ciee.png';
 import quantoSobraImage from '../assets/quanto_sobra.png';
 import parceiro1 from '../assets/perceiro1.png';
 import logoFacebook from '../assets/facebook.png';
