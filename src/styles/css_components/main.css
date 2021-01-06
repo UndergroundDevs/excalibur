@@ -62,7 +62,6 @@ section#home img {
   grid-column: 1/2;
   grid-row: 2/4;
   height: 100%;
-  width: 100%;
 }
 
 /*===============================*/
@@ -79,8 +78,8 @@ section#home-part-two img {
   grid-column: 1/2;
   grid-row: 2/3;
   height: 100%;
-  width: 100%;
   margin-top: 1rem;
+  justify-self: center;
 }
 
 section#home-part-two .description-section {
@@ -602,7 +601,6 @@ footer .container .social-medias a#copy {
     grid-column: auto;
     grid-row: 1/3;
     height: 100%;
-    width: 100%;
     margin-top: 1rem;
   }
 
@@ -730,7 +728,6 @@ footer .container .social-medias a#copy {
   section#home img {
     grid-column: 2/3;
     grid-row: 1/6;
-    width: 100%;
     height: 100%;
   }
 

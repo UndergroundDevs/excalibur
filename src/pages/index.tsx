@@ -5,20 +5,18 @@ import { Nav, Header, Buttom } from '../styles/header';
 import Head from 'next/head';
 
 import logoAndro from '../../public/logo-andro.svg';
-import backgroundImage from '../assets/Vetor.svg';
-import imageGestão from '../assets/Vector_gestao.svg';
-import imageGestão1 from '../assets/Vetor-2.svg';
-import imageGestão2 from '../assets/Vetor-3.svg';
-import service from '../assets/service.svg';
+import backgroundImage from '../assets/Vetor.png';
+import imageGestão from '../assets/Vector_Gestão.png';
+import imageGestão1 from '../assets/Vetor-2.png';
+import imageGestão2 from '../assets/Vetor-3.png';
+import service from '../assets/services.png';
 import cieeImage from '../assets/ciee.png';
 import quantoSobraImage from '../assets/quanto_sobra.png';
-import parceiro1 from '../assets/parceiro1.svg';
-import parceiro2 from '../assets/parceiro2.svg';
+import parceiro1 from '../assets/perceiro1.png';
 import logoFacebook from '../assets/facebook.png';
 import logoInstagram from '../assets/instagram.png';
 import logoLinkedin from '../assets/linkedin.png';
 import logoMail from '../assets/mail.png';
-import { Console } from 'console';
 
 export default function Home() {
   const [ isOpenMenu, setIsOpenMenu ] = useState(false);
