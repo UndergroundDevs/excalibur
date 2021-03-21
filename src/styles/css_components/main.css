@@ -26,7 +26,6 @@ section#home h1 {
 section#home .container-services {
   grid-column: 1/2;
   grid-row: 4/5;
-  padding-top: 10px;
 }
 
 section#home .container-services h2 {
