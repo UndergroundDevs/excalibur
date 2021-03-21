@@ -16,7 +16,7 @@ section#home {
 section#home h1 {
   grid-column: 1/2;
   grid-row: 1/2;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
@@ -26,6 +26,7 @@ section#home h1 {
 section#home .container-services {
   grid-column: 1/2;
   grid-row: 4/5;
+  padding-top: 10px;
 }
 
 section#home .container-services h2 {
@@ -707,7 +708,7 @@ footer .container .social-medias a#copy {
   section#home h1 {
     grid-column: 1/2;
     grid-row: 2/3;
-    font-size: 3rem;
+    font-size: 5.25rem;
     text-align: left;
   }
   
@@ -718,6 +719,7 @@ footer .container .social-medias a#copy {
   
   section#home .container-services h2 {
     text-align: left;
+    font-size: 3rem
   }
 
   section#home .container-services a {
@@ -728,7 +730,7 @@ footer .container .social-medias a#copy {
   section#home img {
     grid-column: 2/3;
     grid-row: 1/6;
-    height: 100%;
+    height: 142.5%;
   }
 
   /*===============================*/
