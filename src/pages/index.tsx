@@ -181,7 +181,6 @@ export default function Home() {
         <h1>Dificuldades com<br />seu negócio?</h1>
         <div className="container-services">
           <h2>Nós damos outra<br />chance pra você.</h2>
-          <br />
           <a href="#second-chance">ganhe um segunda chance</a>
         </div>
         <img src={backgroundImage} alt="pessoa alcançando a bandeira no topo de uma montanha" />
