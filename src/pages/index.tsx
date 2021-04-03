@@ -18,6 +18,18 @@ import logoFacebook from '../assets/facebook.png';
 import logoInstagram from '../assets/instagram.png';
 import logoLinkedin from '../assets/linkedin.png';
 import logoMail from '../assets/mail.png';
+import imgRising from '../assets/Rising-cuate.svg';
+import imgScrum from '../assets/Scrum board.gif';
+import imgInvoice from '../assets/Invoice.gif';
+import imgLaw from '../assets/Lawyer.gif';
+import Leandro from '../assets/Leandro.png';
+import Wanghley from '../assets/Wang.png';
+import Davi from '../assets/davi.png';
+import Cibele from '../assets/Cibele.png';
+import Lucas from '../assets/Lucas.png';
+import Paulo from '../assets/Paulo.png';
+import Thiago from '../assets/Thiago.png';
+
 
 export default function Home() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -178,51 +190,58 @@ export default function Home() {
       </Header>
 
       <section id="home">
-        <h1>Dificuldades com<br />seu negócio?</h1>
+        <h1>O melhor caminho entre você e o seu cliente</h1>
         <div className="container-services">
-          <h2>Nós damos outra<br />chance pra você.</h2>
-          <a href="#second-chance">ganhe um segunda chance</a>
+          <h2>Identifique e alcance seus clientes independente de onde eles estão.</h2>
+          <a href="#second-chance">Entre em contato!</a>
         </div>
-        <img src={backgroundImage} alt="pessoa alcançando a bandeira no topo de uma montanha" />
+        <img src={imgRising} alt="pessoa alcançando a bandeira no topo de uma montanha" />
       </section>
 
       <section id="home-part-two">
-        <img src={imageGestão} alt="reunião entre dirigentes com slide no fundo" />
-        <div className="description-section description-section-align-to-right">
-          <h1 className="align-text-to-right">A melhor gestão para o seu projeto</h1>
+        <div className="description-section">
+          <h1 className="align-text-to-right">Possua o gerenciamento mais eficiente</h1>
           <h2 className="align-text-to-right">
-            Impulsionamos o seu sonho através da
-            análise e planejamento alinhado as
-            demandas do mercado.
+          Administre de forma ágil e precisa o fluxo do seu negócio.
           </h2>
-          <a href="#">impusione seu negócio</a>
+          <ul>
+            <li>Controle de Estoque</li>
+            <li>Fluxograma dos processos e dos departamentos</li>
+            <li>Gestão de Arquivos e Documentos</li>
+          </ul>
+          {/* <a href="#">impusione seu negócio</a> */}
+        </div>
+        <img src={imgScrum} alt="reunião entre dirigentes com slide no fundo" />
+      </section>
+      <section id="home-part-two">
+      <img src={imgInvoice} alt="reunião entre dirigentes com slide no fundo" />
+        <div className="description-section">
+          <h1>Retome o controle do seu dinheiro</h1>
+          <h2>Reduza gastos, otimizando sua renda e fazendo investimentos mais certeiros.</h2>
+          <ul>
+            <li>Extrato (Pagar e Receber) </li>
+            <li>Fluxo de Caixa</li>
+            <li>Projeções e Métricas</li>
+            <li>Criação de Relatórios</li>
+          </ul>
         </div>
       </section>
       <section id="home-part-two">
         <div className="description-section">
-          <h1>A comunicação certa para o seu produto</h1>
-          <h2>
-            Com as melhores plataformas de
-            comunicação e gerenciamento, criamos
-            o melhor caminho entre o seu cliente e o seu produto.
-          </h2>
-          <a href="#">Encontre seus clientes</a>
-        </div>
-        <img src={imageGestão1} alt="reunião entre dirigentes com slide no fundo" />
-      </section>
-      <section id="home-part-two">
-        <img src={imageGestão2} alt="reunião entre dirigentes com slide no fundo" />
-        <div className="description-section description-section-align-to-right">
-          <h1 className="align-text-to-right">
-            Devolvemos o seu
-            controle financeiro
-          </h1>
+          <h1 className="align-text-to-right">Desburocratize seu negócio</h1>
           <h2 className="align-text-to-right">
-            Gerenciamos suas finanças, alcançando o melhor desempenho
-            financeiro, devolvendo o controle do seu dinheiro.
+          Cuidamos da papelada, organizando
+          e acertando todos os termos
+          facilitando o desenvolvimento do
+          seu empreendimento.
           </h2>
-          <a href="#">Recupere o seu controle</a>
+          <ul>
+            <li>Análise de documentação</li>
+            <li>Elaboração de Contratos</li>
+            <li>Processos em andamento</li>
+          </ul>
         </div>
+        <img src={imgLaw} alt="reunião entre dirigentes com slide no fundo" />
       </section>
 
       <section id="about">
@@ -236,7 +255,9 @@ export default function Home() {
           ref={caroselRef}
         >
           <div className="we">
-            <div className="image"></div>
+            <div className="image">
+            <img src={Leandro} alt="Leandro" />
+            </div>
             <h1>LEANDRO MENDES</h1>
             <p>
               Fundador e Consultor Técnico da Andro, 28 anos. Formado em RH, Administração de Empresas e MBA em Gestão de Negocios. Trabalhou durante 8 anos com Administração de empresa e gestão de projetos.
@@ -246,16 +267,20 @@ export default function Home() {
           </div>
 
           <div className="we">
-            <div className="image"></div>
+            <div className="image">
+            <img src={Wanghley} alt="Wanghley" />
+            </div>
             <h1>WANGHLEY MARTINS</h1>
             <p>
-            Pesquisador, empreendedor social, cientista e analista de dados e desenvolvedor de sistemas especialistas. Tem experiência na área de Computação, engenharia biomédica, com enfase em ciência de dados, solução criativa de problemas, empreendedorismo verde, empreendedorismo Juvenil, Desenvolvimento Desktop, WEB e mobile.
+            Pesquisador, empreendedor social, cientista e analista de dados e desenvolvedor de sistemas especialistas. Tem experiência na área de Computação com enfase em ciência de dados, solução criativa de problemas, empreendedorismo verde, empreendedorismo Juvenil, Desenvolvimento Desktop, WEB e mobile.
 
             </p>
             <h2>Consultor de Tecnologia e Inovação</h2>
           </div>
           <div className="we">
-            <div className="image"></div>
+            <div className="image">
+              <img src={Davi} alt="Davi" />
+            </div>
             <h1>DAVI COLARES</h1>
             <p>
             Redator e designer freelancer, pesquisador e empreendedor, 17 anos. Experiência em oratória, marketing digital, estratégias empresariais, desenvolvimento de identidade visual, experiência de usuário e interface, gestão de mídias.
@@ -264,7 +289,9 @@ export default function Home() {
             <h2>Consultor de Mídia</h2>
           </div>
           <div className="we">
-            <div className="image"></div>
+          <div className="image">
+              <img src={Thiago} alt="Thiago" />
+            </div>
             <h1>THIAGO ROCHA</h1>
             <p>
             Formando em Administração de empresas e com experiência nas áreas de recursos humanos e finanças em consultoria e multinacional. Com foco em encontrar soluções, desenvolvimento empresarial e planejamento estratégico.
@@ -273,13 +300,37 @@ export default function Home() {
             <h2>CONSULTOR ADMINISTRATIVO</h2>
           </div>
           <div className="we">
-            <div className="image"></div>
+            <div className="image">
+              <img src={Paulo} alt="Paulo" />
+            </div>
             <h1>PAULO GUILHERME</h1>
             <p>
             Tem 20 anos, empreendedor, analista de processos e gestor logístico. Experiência em gestão de projetos, desenvolver diagnósticos, mapear fluxos de atividade, planejar estratégias e aplicar alternativas, soluções para melhoria dos processos, controle logístico, manutenção de informações, armazenagem e demanda de estoque.
 
             </p>
             <h2>CONSULTOR DE PROJETOS</h2>
+          </div>
+          <div className="we">
+            <div className="image">
+            <img src={Cibele} alt="Wanghley" />
+            </div>
+            <h1>CIBELE DINIZ</h1>
+            <p>
+            Pré-universitária com expriência em edição de vídeos e ilustrações, buscando sempre inovar e se expressar através da estética audiovisual.
+
+            </p>
+            <h2>Consultora de Mídia</h2>
+          </div>
+          <div className="we">
+            <div className="image">
+            <img src={Lucas} alt="Wanghley" />
+            </div>
+            <h1>LUCAS COELHO</h1>
+            <p>
+            Certificado pela Hansai em engenharia de processos para negócios e com experiência em gerência de tráfego, marketing digital, gestão de mídias, design para mídias e empreendedorismo social.
+
+            </p>
+            <h2>Consultor de processos</h2>
           </div>
         </div>
       </section>
@@ -289,19 +340,27 @@ export default function Home() {
         <div className="container-services">
           <div className="service-1">
             <img src={service} alt="" />
-            <h3>Recrutamnto & <br />Gerenciamento</h3>
+            <h3>Gestão de <br />Qualidade</h3>
           </div>
           <div className="service-2">
             <img src={service} alt="" />
-            <h3>Marketing & <br />Design Gáfico</h3>
+            <h3>Tecnologias e <br />Sistemas</h3>
           </div>
           <div className="service-3">
             <img src={service} alt="" />
-            <h3>Contabilidade & <br />Investimento</h3>
+            <h3>Recursos<br /> Humanos</h3>
           </div>
           <div className="service-4">
             <img src={service} alt="" />
-            <h3>Controle & <br />Qualidade</h3>
+            <h3>Comercial & <br />Marketing</h3>
+          </div>
+          <div className="service-5">
+            <img src={service} alt="" />
+            <h3>Financeiro</h3>
+          </div>
+          <div className="service-6">
+            <img src={service} alt="" />
+            <h3>Processos e Qualidade</h3>
           </div>
         </div>
       </section>
