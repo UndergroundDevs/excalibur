@@ -29,6 +29,12 @@ import Cibele from '../assets/Cibele.png';
 import Lucas from '../assets/Lucas.png';
 import Paulo from '../assets/Paulo.png';
 import Thiago from '../assets/Thiago.png';
+import quality from '../assets/quality.svg';
+import rh from '../assets/rh.svg';
+import tech from '../assets/tech.svg';
+import comercial from '../assets/comercial.svg';
+import financeiro from '../assets/financeiro.svg';
+import processos from '../assets/processos.svg';
 
 
 export default function Home() {
@@ -193,7 +199,7 @@ export default function Home() {
         <h1>O melhor caminho entre você e o seu cliente</h1>
         <div className="container-services">
           <h2>Identifique e alcance seus clientes independente de onde eles estão.</h2>
-          <a href="#second-chance">Entre em contato!</a>
+          <a href="#contact">Entre em contato!</a>
         </div>
         <img src={imgRising} alt="pessoa alcançando a bandeira no topo de uma montanha" />
       </section>
@@ -339,28 +345,49 @@ export default function Home() {
         <h1>O que fazemos</h1>
         <div className="container-services">
           <div className="service-1">
-            <img src={service} alt="" />
+            <img src={quality} alt="" />
             <h3>Gestão de <br />Qualidade</h3>
+            <p>Missão, Visão e Valores;
+            Conjunto de políticas e diretrizes;
+            Relação de poder e comando da organização. 
+            </p>
           </div>
           <div className="service-2">
-            <img src={service} alt="" />
+            <img src={tech} alt="" />
             <h3>Tecnologias e <br />Sistemas</h3>
+            <p>Sistemas especialistas para o seu negócio, conforme sua demanda. Desde estoque à site promocional.</p>
           </div>
           <div className="service-3">
-            <img src={service} alt="" />
+            <img src={rh} alt="" />
             <h3>Recursos<br /> Humanos</h3>
+            <p>Processo de Recrutamento e seleção;
+            Folha de pagamento;
+            Plano de cargos e salários;
+            e muito mais.
+            </p>
           </div>
           <div className="service-4">
-            <img src={service} alt="" />
+            <img src={comercial} alt="" />
             <h3>Comercial & <br />Marketing</h3>
+            <p>Réguas de relacionamento comercial 
+            <br/>
+            Estratégias atuais de Marketing Digital. 
+            </p>
           </div>
           <div className="service-5">
-            <img src={service} alt="" />
+            <img src={financeiro} alt="" />
             <h3>Financeiro</h3>
+            <p>Principais processos do fluxo de caixa;
+            Realização de tarefas inerentes à contabilidade e controles;
+            e muito mais.
+            </p>
           </div>
           <div className="service-6">
-            <img src={service} alt="" />
+            <img src={processos} alt="" />
             <h3>Processos e Qualidade</h3>
+            <p>Situação atual e melhoria nos principais processos;
+            Como é realizada a gestão de qualidade.
+            </p>
           </div>
         </div>
       </section>
@@ -469,7 +496,7 @@ export default function Home() {
             <a onClick={copyEmail} id="copy" href="comercial@androconsult.com.br">comercial@androconsult.com.br</a>
           </div>
         </div>
-        <h1>Copyright© 2021 Andro |<br/> Feito com ❤️ pela Underground Devs</h1>
+        <h1>Copyright© 2021 Andro Consultoria & Assessoria | Feito com ❤️ pela <a href="http://www.undergrounds.rf.gd/" target="_blank">Underground Devs</a></h1>
       </footer>
     </>
   )
