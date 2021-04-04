@@ -475,7 +475,7 @@ section#partnerships .container-partnerships {
 section#partnerships .container-partnerships img {
   height: 100px;
   width: auto;
-  object-fit: cover;
+  object-fit: contain;
   margin-top: 5rem;
 }
 
@@ -726,7 +726,7 @@ footer .container .social-medias a#copy {
 @media (min-width: 1024px) {
   section#home {
     display: grid;
-    grid-template-columns: 50% 30%;
+    grid-template-columns: 50% 50%;
     justify-items: left;
     padding: 90px 4rem 0 4rem;
   }
@@ -740,9 +740,7 @@ footer .container .social-medias a#copy {
   }
   section#home .container-services h2 {
     text-align: left;
-    padding-top: 10px;
     max-width: 525px;
-    padding-bottom: 20px;
     font-size: 1.2rem;
   }
   section#home .container-services a {
@@ -751,9 +749,9 @@ footer .container .social-medias a#copy {
   }
   section#home img {
     grid-column: 2/3;
-    grid-row: 1/6;
-    height: 70vh;
-    margin-top: 60px;
+    grid-row: 1/3;
+    height: 80vh;
+    margin-top: 40px;
   }
   /*===============================*/
   section#home-part-two {
