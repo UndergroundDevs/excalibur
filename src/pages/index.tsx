@@ -451,8 +451,8 @@ export default function Home() {
         <div className="container-contact-title">
           <h1>Entre em contato</h1>
           <h2>
-            Preencha os dados ao lado pra gente
-            se conhecer melhor e marcar uma conversa 😉
+            Preencha os dados de contato pra gente
+            se conhecer melhor e marcarmos uma conversa 😉
           </h2>
         </div>
         <form onSubmit={handleSubmit}>
