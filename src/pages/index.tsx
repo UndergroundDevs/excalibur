@@ -311,7 +311,7 @@ export default function Home() {
             </div>
             <h1>PAULO GUILHERME</h1>
             <p>
-            Tem 20 anos, empreendedor, analista de processos e gestor logístico. Experiência em gestão de projetos, desenvolver diagnósticos, mapear fluxos de atividade, planejar estratégias e aplicar alternativas, soluções para melhoria dos processos, controle logístico, manutenção de informações, armazenagem e demanda de estoque.
+            Tem 20 anos, empreendedor, analista de processos e gestor logístico. Experiência em gestão de projetos, desenvolver diagnósticos, mapear fluxos de atividade, planejar estratégias e aplicar alternativas, soluções para melhoria dos processos, controle logístico, armazenagem e demanda de estoque.
 
             </p>
             <h2>CONSULTOR DE PROJETOS</h2>
