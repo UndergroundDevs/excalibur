@@ -203,6 +203,97 @@ export default function Home() {
         <img src={backgroundImage} alt="Leão representando a logo da empresa" />
       </section>
 
+      <section id="about">
+        <div className="container-title">
+          <h1>Nossa <br />Equipe</h1>
+          <h2>de profissionais qualificados em fazer seu negócio dar certo.</h2>
+        </div>
+
+        <div
+          className="container-about"
+          ref={caroselRef}
+        >
+          <div className="we">
+            <div className="image">
+            <img src={Leandro} alt="Leandro" />
+            </div>
+            <h1>LEANDRO MENDES</h1>
+            <p>
+              Fundador e Consultor Técnico da Andro, 28 anos. Formado em RH, Administração de Empresas e MBA em Gestão de Negocios. Trabalhou durante 8 anos com Administração de empresa e gestão de projetos.
+
+            </p>
+            <h2>CEO da Andro Consultoria e Assessoria</h2>
+          </div>
+
+          <div className="we">
+            <div className="image">
+            <img src={Wanghley} alt="Wanghley" />
+            </div>
+            <h1>WANGHLEY MARTINS</h1>
+            <p>
+            Pesquisador, empreendedor social, cientista e analista de dados e desenvolvedor de sistemas especialistas. Tem experiência na área de Computação com enfase em ciência de dados, solução criativa de problemas, empreendedorismo verde, empreendedorismo Juvenil, Desenvolvimento Desktop, WEB e mobile.
+
+            </p>
+            <h2>Consultor de Tecnologia e Inovação</h2>
+          </div>
+          <div className="we">
+            <div className="image">
+              <img src={Davi} alt="Davi" />
+            </div>
+            <h1>DAVI COLARES</h1>
+            <p>
+            Redator e designer freelancer, pesquisador e empreendedor, 17 anos. Experiência em oratória, marketing digital, estratégias empresariais, desenvolvimento de identidade visual, experiência de usuário e interface, gestão de mídias.
+
+            </p>
+            <h2>Consultor de Mídia</h2>
+          </div>
+          <div className="we">
+          <div className="image">
+              <img src={Thiago} alt="Thiago" />
+            </div>
+            <h1>THIAGO ROCHA</h1>
+            <p>
+            Formando em Administração de empresas e com experiência nas áreas de recursos humanos e finanças em consultoria e multinacional. Com foco em encontrar soluções, desenvolvimento empresarial e planejamento estratégico.
+
+            </p>
+            <h2>CONSULTOR ADMINISTRATIVO</h2>
+          </div>
+          <div className="we">
+            <div className="image">
+              <img src={Paulo} alt="Paulo" />
+            </div>
+            <h1>PAULO GUILHERME</h1>
+            <p>
+            Tem 20 anos, empreendedor, analista de processos e gestor logístico. Experiência em gestão de projetos, desenvolver diagnósticos, mapear fluxos de atividade, planejar estratégias e aplicar alternativas, soluções para melhoria dos processos, controle logístico, armazenagem e demanda de estoque.
+
+            </p>
+            <h2>CONSULTOR DE PROJETOS</h2>
+          </div>
+          <div className="we">
+            <div className="image">
+            <img src={Cibele} alt="Wanghley" />
+            </div>
+            <h1>CIBELE DINIZ</h1>
+            <p>
+            Pré-universitária com expriência em edição de vídeos e ilustrações, buscando sempre inovar e se expressar através da estética audiovisual.
+
+            </p>
+            <h2>Consultora de Mídia</h2>
+          </div>
+          <div className="we">
+            <div className="image">
+            <img src={Lucas} alt="Wanghley" />
+            </div>
+            <h1>LUCAS COELHO</h1>
+            <p>
+            Certificado pela Hansai em engenharia de processos para negócios e com experiência em gerência de tráfego, marketing digital, gestão de mídias, design para mídias e empreendedorismo social.
+
+            </p>
+            <h2>Consultor de processos</h2>
+          </div>
+        </div>
+      </section>
+
       <section id="home-part-two">
         <div className="description-section">
           <h1 className="align-text-to-right">Possua o gerenciamento mais eficiente</h1>

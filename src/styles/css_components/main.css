@@ -704,21 +704,6 @@ footer .container .social-medias a#copy {
   section#services .container-services h3 {
     text-align: center;
   }
-  section#services .container-services .service-2 {
-    
-  }
-  section#services .container-services .service-3 {
-
-  }
-  section#services .container-services .service-4 {
-    
-  }
-  section#services .container-services .service-5 {
-    
-  }
-  section#services .container-services .service-6 {
-    
-  }
 }
 
 @media (min-width: 1024px) {
@@ -731,16 +716,17 @@ footer .container .social-medias a#copy {
   section#home h1 {
     grid-column: 1/1;
     grid-row: 2/3;
-    font-size: 3.5rem;
+    font-size: 3rem;
+    font-family: 'Fira Sans', sans-serif;
     text-align: left;
-    margin-top: -5rem;
+    margin-top: -3rem;
     font-weight: 500;
   }
   section#home .container-services h2 {
     text-align: left;
     max-width: 525px;
     font-size: 1.2rem;
-    margin-top: -12rem;
+    margin-top: -8rem;
   }
   section#home .container-services a {
     margin-top: 2.25rem;
@@ -752,7 +738,7 @@ footer .container .social-medias a#copy {
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     min-width: 320px;
     min-height: 50px;
     border-radius: 4px;
