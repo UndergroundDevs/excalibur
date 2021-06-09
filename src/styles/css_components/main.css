@@ -2,7 +2,7 @@ section#home {
   width: 100%;
   height: 100vh !important;
   padding: 90px 1rem 1rem 1rem;
-  background: linear-gradient(360deg, #3784C4 0%, #2C70AF 23.25%, #2E588C 44.68%, #27427E 66.1%, #222967 87.53%);
+  background: #040A25;
 }
 
 section#home {
@@ -19,8 +19,8 @@ section#home h1 {
   font-size: 2rem;
   text-align: center;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 600;
-  color: #FFF;
+  font-weight: 500;
+  color: #EDF0FD;
 }
 
 section#home .container-services {
@@ -29,29 +29,31 @@ section#home .container-services {
 }
 
 section#home .container-services h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 500;
-  color: #FFF;
+  font-weight: 100;
+  color: #EDF0FD;
 }
 
 section#home .container-services a {
-  width: 237px;
+  width: 280px;
   height: 41px;
-  border-radius: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFF;
-  text-decoration: none;
-  text-transform: uppercase;
+  background-color: #1789FC; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 25px;
   text-align: center;
+  text-decoration: none;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: normal;
-  font-size: 1rem;
-  color: #27427E;
-  transition: opacity .6s;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+section#home .container-services a:active{
+  background-color: #274690;
 }
 
 section#home .container-services a:hover {
@@ -511,7 +513,7 @@ section#contact form fieldset button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: left;
-    padding: 90px 4rem 0 4rem;
+    padding: 90px 6rem 0 6rem;
   }
 
   section#home h1 {
@@ -519,6 +521,7 @@ section#contact form fieldset button {
     grid-row: 2/3;
     font-size: 3rem;
     text-align: left;
+    margin-top: -2rem;
   }
   
   section#home .container-services {
@@ -528,18 +531,33 @@ section#contact form fieldset button {
   
   section#home .container-services h2 {
     text-align: left;
+    margin-top: -1.8rem;
   }
 
   section#home .container-services a {
-    text-align: left;
-    margin-top: 1rem;
+    margin-top: 2.25rem;
+    background-color: #1789FC; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    display: inline-block;
+    font-size: 16px;
+    min-width: 320px;
+    min-height: 50px;
+    border-radius: 4px;
+    font-weight: 500;
   }
 
   section#home img {
     grid-column: 2/3;
-    grid-row: 1/6;
-    width: 100%;
-    height: 100%;
+    grid-row: 1/5; 
+    max-height: 80%;
+    margin-top: 3rem;
+    position: relative;
+    left: 6rem;
   }
 
   /*===============================*/

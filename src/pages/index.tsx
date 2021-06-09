@@ -4,13 +4,13 @@ import { Nav, Header, Buttom } from '../styles/header';
 
 import Head from 'next/head';
 
-import logoAndro from '../../public/logo-andro.svg';
-import backgroundImage from '../assets/Vetor.svg';
-import imageGestão from '../assets/Vector_gestao.svg';
+import logoAndro from '../assets/logo-andro.svg';
+import backgroundImage from '../assets/Andro-hero.svg';
+import imageGestão from '../assets/Vector_Gestao.svg';
 import imageGestão1 from '../assets/Vetor-2.svg';
 import imageGestão2 from '../assets/Vetor-3.svg';
 import service from '../assets/service.svg';
-import cieeImage from '../assets/ciee.png';
+import cieeImage from '../assets/CIEE.png';
 import quantoSobraImage from '../assets/quanto_sobra.png'
 
 export default function Home() {
@@ -61,7 +61,7 @@ export default function Home() {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if (window.scrollY >= 90 ) {
-        coloHeader.current.style.background = "#222967"
+        coloHeader.current.style.background = "#040A25"
       }
 
       if (window.scrollY <= 90 ) {
@@ -73,33 +73,31 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Andro</title>
-        <link rel="icon" href="/logo-andro.svg" />
+        <title>Andro | Consultoria e Assessoria</title>
+        <link rel="icon" href="/logo_azul.png" />
       </Head>
 
       <Header isColoraBlue={isBlue} ref={coloHeader}>
         <div className="container-logo">
           <a href="P-home" ref={home}>
             <img src={logoAndro} alt="Águia em branco com um fundo azul"/>
-            <h1>Andro</h1>
           </a>
         </div>
         <Nav open={isOpenMenu} ref={myNav}>
-          <a href="P-services">serviços</a>
-          <a href="P-about">quem somos</a>
-          <a href="P-client">clientes</a>
-          <a href="P-partnerships">parcerias</a>
-          <a href="P-contact">contato</a>
+          <a href="P-about">Quem Somos</a>
+          <a href="P-client">Como Trabalhamos</a>
+          <a href="P-partnerships">Clientes</a>
+          <button>Fale Conosco</button>
         </Nav>
       </Header>
 
       <section id="home">
-        <h1>Dificuldades com o seu negócio?</h1>
+        <h1>A agilidade e eficiência que seu negócio precisa</h1>
         <div className="container-services">
-          <h2>Nós damos outra</h2>
-          <a href="#second-chance">ganhe um seunda chance</a>
+          <h2>Somos uma empresa de prestação de serviços para quem já possui ou vai iniciar um negócio e necessita de soluções criativas em financeiro, marketing, pessoas, operacional ou estratégico.</h2>
+          <a href="#second-chance">Solicite uma análise gratuita</a>
         </div>
-        <img src={backgroundImage} alt="pessoa alcançando a bandeira no topo de uma montanha" />
+        <img src={backgroundImage} alt="Leão representando a logo da empresa" />
       </section>
 
       <section id="home-part-two">
@@ -149,6 +147,7 @@ export default function Home() {
           <h1>Nossa Equipe</h1>
           <h2>de profissionais qualificados em fazer seu negócio dar certo.</h2>
         </div>
+        
       </section>
 
       <section id="services">

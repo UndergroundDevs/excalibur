@@ -7,7 +7,7 @@ export const Header = styled.header<{ isColoraBlue: boolean }>`
   background: transparent;
 
   .container-logo {
-    background: linear-gradient(180deg, #222967 66.1%, #27427E 5000.53%);
+    background: #040A25;
     width: 100%;
     height: 80px;
     display: flex;
@@ -36,7 +36,7 @@ export const Header = styled.header<{ isColoraBlue: boolean }>`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem 0 3rem;
+    padding: 0 6rem 0 6rem;
     transition: 1s;
 
     .container-logo {
@@ -59,20 +59,48 @@ export const Nav = styled.nav<{open: boolean}>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, #222967 66.1%, #27427E 2000.53%);
+  background: #040A25;
 
   a {
     width: 100%;
     height: 30px;
-    font-size: 14px;
+    font-size: 16px;
     margin: 5px 0 5px 0;
     text-align: center;
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     color:#FFFFFF;
-    text-transform: uppercase;
+    text-transform: capitalize;
     white-space: nowrap;
+  }
+
+  a::before {
+    content: "●";
+    color: #1789FC;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  button {
+    background-color: #1789FC; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    display: inline-block;
+    font-size: 16px;
+    min-width: 140px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  button:active{
+    background-color: #274690;
+    duration: 1s;
   }
 
   @media (min-width: 1024px) {
@@ -85,12 +113,33 @@ export const Nav = styled.nav<{open: boolean}>`
 
     a {
       height: auto;
-      font-size: 0.9rem;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #1789FC; /* Green */
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Fira Sans', sans-serif;
+      display: inline-block;
+      font-size: 16px;
+      min-width: 140px;
+      border-radius: 4px;
+      font-weight: 500;
     }
 
     a + a {
-      margin: 0 0 0 1rem;
+      margin: 0 0 0 4rem;
     }
+
+    a + button {
+      margin: 0 0 0 4rem;
+    }
+
+
 
     background: transparent;
   }
