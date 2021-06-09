@@ -5,6 +5,7 @@ export const Header = styled.header<{ isColoraBlue: boolean }>`
   height: 80px;
   position: fixed;
   background: transparent;
+  z-index: 100;
 
   .container-logo {
     background: #040A25;
