@@ -48,6 +48,7 @@ export default function Home() {
   const home = useRef<HTMLAnchorElement>(null);
   const caroselRef = useRef<HTMLDivElement>(null);
   const caroselRef2 = useRef<HTMLDivElement>(null);
+  const caroselRefWhatWeDo = useRef<HTMLDivElement>(null);
   const ancorCopy = useRef<HTMLDivElement>(null);
 
   function openMenu() {
@@ -162,6 +163,35 @@ export default function Home() {
       slide2.scrollLeft = scrollLeft2 - walk;
     });
 
+    const slideWhatWeDo = caroselRefWhatWeDo.current;
+
+    let isDown3 = false;
+    let startX3;
+    let scrollLeft3;
+
+    slideWhatWeDo.addEventListener('mousedown', (event) => {
+      isDown3 = true;
+      slideWhatWeDo.classList.add('active');
+      startX3 = event.pageX - slideWhatWeDo.offsetLeft;
+      scrollLeft3 = slideWhatWeDo.scrollLeft;
+    });
+
+    slideWhatWeDo.addEventListener('mouseleave', () => {
+      isDown3 = false;
+    });
+
+    slideWhatWeDo.addEventListener('mouseup', () => {
+      isDown3 = false;
+    });
+
+    slideWhatWeDo.addEventListener('mousemove', (e) => {
+      if (!isDown3) return;
+      e.preventDefault();
+      const x = e.pageX - slideWhatWeDo.offsetLeft;
+      const walk = (x - startX3) * 2.5; //scroll-fast
+      slideWhatWeDo.scrollLeft = scrollLeft3 - walk;
+    });
+
   }, []);
 
   function handleSubmit(event: FormEvent) {
@@ -203,15 +233,15 @@ export default function Home() {
         <img src={backgroundImage} alt="Leão representando a logo da empresa" />
       </section>
 
-      <section id="about">
+      <section id="whatwedo">
         <div className="container-title">
-          <h1>Nossa <br />Equipe</h1>
-          <h2>de profissionais qualificados em fazer seu negócio dar certo.</h2>
+          <h1>O que nós fazemos?</h1>
+          <h2>Oferecemos mais que serviços, com entrega rápida e trabalho<br/>humanizado, somos a melhor escolha para seu negócio.</h2>
         </div>
 
         <div
           className="container-about"
-          ref={caroselRef}
+          ref={caroselRefWhatWeDo}
         >
           <div className="we">
             <div className="image">
@@ -246,50 +276,6 @@ export default function Home() {
 
             </p>
             <h2>Consultor de Mídia</h2>
-          </div>
-          <div className="we">
-          <div className="image">
-              <img src={Thiago} alt="Thiago" />
-            </div>
-            <h1>THIAGO ROCHA</h1>
-            <p>
-            Formando em Administração de empresas e com experiência nas áreas de recursos humanos e finanças em consultoria e multinacional. Com foco em encontrar soluções, desenvolvimento empresarial e planejamento estratégico.
-
-            </p>
-            <h2>CONSULTOR ADMINISTRATIVO</h2>
-          </div>
-          <div className="we">
-            <div className="image">
-              <img src={Paulo} alt="Paulo" />
-            </div>
-            <h1>PAULO GUILHERME</h1>
-            <p>
-            Tem 20 anos, empreendedor, analista de processos e gestor logístico. Experiência em gestão de projetos, desenvolver diagnósticos, mapear fluxos de atividade, planejar estratégias e aplicar alternativas, soluções para melhoria dos processos, controle logístico, armazenagem e demanda de estoque.
-
-            </p>
-            <h2>CONSULTOR DE PROJETOS</h2>
-          </div>
-          <div className="we">
-            <div className="image">
-            <img src={Cibele} alt="Wanghley" />
-            </div>
-            <h1>CIBELE DINIZ</h1>
-            <p>
-            Pré-universitária com expriência em edição de vídeos e ilustrações, buscando sempre inovar e se expressar através da estética audiovisual.
-
-            </p>
-            <h2>Consultora de Mídia</h2>
-          </div>
-          <div className="we">
-            <div className="image">
-            <img src={Lucas} alt="Wanghley" />
-            </div>
-            <h1>LUCAS COELHO</h1>
-            <p>
-            Certificado pela Hansai em engenharia de processos para negócios e com experiência em gerência de tráfego, marketing digital, gestão de mídias, design para mídias e empreendedorismo social.
-
-            </p>
-            <h2>Consultor de processos</h2>
           </div>
         </div>
       </section>
