@@ -26,6 +26,7 @@ section#home h1 {
 section#home .container-services {
   grid-column: 1/2;
   grid-row: 4/5;
+  
 }
 
 section#services .container-services p {
@@ -37,16 +38,18 @@ section#services .container-services p {
 }
 
 section#home .container-services h2 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-align: center;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 100;
   color: #EDF0FD;
+  margin-top: -4.5rem;
 }
 
 section#home .container-services a {
-  width: 280px;
-  height: 41px;
+  width: 80%;
+  height: auto;
+  text-transform: uppercase;
   background-color: #1789FC; /* Green */
   border: none;
   color: white;
@@ -57,7 +60,9 @@ section#home .container-services a {
   display: inline-block;
   font-size: 16px;
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-left: 10%;
 }
 
 section#home .container-services a:active{
@@ -71,9 +76,9 @@ section#home .container-services a:hover {
 section#home img {
   grid-column: 1/2;
   grid-row: 2/4;
-  height: 90%;
+  height: 70%;
   max-width: 98%;
-  margin-top: -3rem;
+  margin-top: -2rem;
 }
 
 /*===============================*/
@@ -853,16 +858,17 @@ footer .container .social-medias a#copy {
     font-family: 'Fira Sans', sans-serif;
     display: inline-block;
     font-size: 18px;
-    min-width: 320px;
+    max-width: 70%;
     min-height: 50px;
     border-radius: 4px;
     font-weight: 500;
+    margin-left: 0;
   }
   section#home img {
     grid-column: 2/3;
     grid-row: 1/5; 
-    max-height: 80%;
-    margin-top: 3rem;
+    height: 90%;
+    margin-top: 1rem;
     position: relative;
     left: 10rem;
   }
