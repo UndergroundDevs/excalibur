@@ -36,7 +36,11 @@ import tech from '../assets/tech.svg';
 import comercial from '../assets/comercial.svg';
 import financeiro from '../assets/financeiro.svg';
 import processos from '../assets/processos.svg';
-
+import necessidades from '../assets/icons/image 4.svg';
+import solucoes from '../assets/icons/image 5.svg';
+import acoes from '../assets/icons/image 6.svg';
+import projeto from '../assets/icons/image 8.svg';
+import number from '../assets/Group 6.svg';
 
 export default function Home() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -232,7 +236,7 @@ export default function Home() {
         </div>
         <img src={backgroundImage} alt="Leão representando a logo da empresa" />
       </section>
-
+      
       <section id="whatwedo">
         <div className="container-title">
           <h1>O que nós fazemos?</h1>
@@ -245,40 +249,111 @@ export default function Home() {
         >
           <div className="we">
             <div className="image">
-            <img src={Leandro} alt="Leandro" />
+            <img src={necessidades} alt="necessidades" />
             </div>
-            <h1>LEANDRO MENDES</h1>
+            <h1>Necessidades</h1>
             <p>
-              Fundador e Consultor Técnico da Andro, 28 anos. Formado em RH, Administração de Empresas e MBA em Gestão de Negocios. Trabalhou durante 8 anos com Administração de empresa e gestão de projetos.
-
+            Levantar as dores e necessidades do cliente.
             </p>
-            <h2>CEO da Andro Consultoria e Assessoria</h2>
           </div>
 
           <div className="we">
             <div className="image">
-            <img src={Wanghley} alt="Wanghley" />
+            <img src={solucoes} alt="necessidades" />
             </div>
-            <h1>WANGHLEY MARTINS</h1>
+            <h1>Soluções</h1>
             <p>
-            Pesquisador, empreendedor social, cientista e analista de dados e desenvolvedor de sistemas especialistas. Tem experiência na área de Computação com enfase em ciência de dados, solução criativa de problemas, empreendedorismo verde, empreendedorismo Juvenil, Desenvolvimento Desktop, WEB e mobile.
-
+            Identificar todas as possibilidades de soluções e avaliar cada questão em específico.
             </p>
-            <h2>Consultor de Tecnologia e Inovação</h2>
           </div>
+
           <div className="we">
             <div className="image">
-              <img src={Davi} alt="Davi" />
+            <img src={acoes} alt="acoes" />
             </div>
-            <h1>DAVI COLARES</h1>
+            <h1>Ações</h1>
             <p>
-            Redator e designer freelancer, pesquisador e empreendedor, 17 anos. Experiência em oratória, marketing digital, estratégias empresariais, desenvolvimento de identidade visual, experiência de usuário e interface, gestão de mídias.
-
+            Recomendar ações de curto e longo prazos, a fim de gerar negócios e reduzir custos.
             </p>
-            <h2>Consultor de Mídia</h2>
+          </div>
+
+          <div className="we">
+            <div className="image">
+            <img src={projeto} alt="necessidades" />
+            </div>
+            <h1>Projeto</h1>
+            <p>
+            Desenvolver, implantar e viabilizar o projeto de acordo com as metas de cada cliente.
+            </p>
           </div>
         </div>
       </section>
+      <section id="numbers">
+        <div className="row">
+          <img src={number} alt="desenho de 2 pessoas construindo casa"/>
+          <div className="element">
+            <h1>+15</h1>
+            <h2>Empresas renovadas em <span>8 meses</span></h2>
+          </div>
+          <div className="element">
+            <h1>+10</h1>
+            <h2><span>Identidades Visuais</span> criadas</h2>
+          </div>
+          <div className="element">
+            <h1>+1K</h1>
+            <h2><span>Seguidores</span> nas redes sociais</h2>
+          </div>
+        </div>
+      </section>
+
+      {/* NOSSOS CLIENTES */}
+      <section id="client">
+        <h1>Nossos Clientes</h1>
+        <div className="container-cliente" ref={caroselRef2}>
+          <div className="container-carosel">
+            <img src={parceiro2} alt="Farma Clin" />
+            <div className="container-data">
+              <h1>Cheirin Bão</h1>
+              <h2>Nossa Senhora da Paz</h2>
+            </div>
+            <div className="container-data-1">
+              <p>
+                A Andro me surpreendeu com se profissionalismo, meu negócio lucrou como nunca!
+              </p>
+              <h5> - Chris, dona da franqueada</h5>
+            </div>
+          </div>
+          <div className="container-carosel">
+            <img src={parceiro1} alt="Farma Clin" />
+            <div className="container-data">
+              <h1>Farma Clin</h1>
+              <h2>Guaratiba</h2>
+            </div>
+            <div className="container-data-1">
+              <p>
+                Vi meu negócio crescer diante dos meus olhos como mágica,
+                recomendo a Andro para todos.
+              </p>
+              <h5> - Rodrigo, Dono das Farmácias</h5>
+            </div>
+          </div>
+          <div className="container-carosel">
+            <img src={parceiro1} alt="Farma Clin" />
+            <div className="container-data">
+              <h1>Farma Clin</h1>
+              <h2>Guaratiba</h2>
+            </div>
+            <div className="container-data-1">
+              <p>
+                Vi meu negócio crescer diante dos meus olhos como mágica,
+                recomendo a Andro para todos.
+              </p>
+              <h5> - Rodrigo, Dono das Farmácias</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =============== */}
 
       <section id="home-part-two">
         <div className="description-section">
