@@ -45,6 +45,7 @@ import box from '../assets/icons/box.svg';
 
 // LOGO CLIENTES
 import farmaclin from '../assets/clients/farmaclin.png';
+import cheirinBao from '../assets/clients/cheirinbao.png';
 
 export default function Home() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -140,35 +141,6 @@ export default function Home() {
       const x = e.pageX - slide.offsetLeft;
       const walk = (x - startX) * 2.5; //scroll-fast
       slide.scrollLeft = scrollLeft - walk;
-    });
-
-    const slide2 = caroselRef2.current;
-
-    let isDown2 = false;
-    let startX2;
-    let scrollLeft2;
-
-    slide2.addEventListener('mousedown', (event) => {
-      isDown2 = true;
-      slide2.classList.add('active');
-      startX2 = event.pageX - slide2.offsetLeft;
-      scrollLeft2 = slide2.scrollLeft;
-    });
-
-    slide2.addEventListener('mouseleave', () => {
-      isDown2 = false;
-    });
-
-    slide2.addEventListener('mouseup', () => {
-      isDown2 = false;
-    });
-
-    slide2.addEventListener('mousemove', (e) => {
-      if (!isDown2) return;
-      e.preventDefault();
-      const x = e.pageX - slide2.offsetLeft;
-      const walk = (x - startX2) * 2.5; //scroll-fast
-      slide2.scrollLeft = scrollLeft2 - walk;
     });
 
     const slideWhatWeDo = caroselRefWhatWeDo.current;
@@ -316,9 +288,9 @@ export default function Home() {
           <h1>Nossos Clientes</h1>
           <p>Conheça nossos clientes que tiveram seu negócio transformado!</p>
         </div>
-        <div className="container-cliente" ref={caroselRef2}>
+        <div className="container-cliente">
           <div className="container-carosel">
-            <img src={farmaclin} alt="Farma Clin" />
+            <img className='hero' src={farmaclin} alt="Farma Clin" />
             <div className="container-data">
               <h1>O que foi feito?</h1>
               <ul>
@@ -333,8 +305,7 @@ export default function Home() {
             <div className="container-result">
               <div>
                 <h1>45%↑</h1>
-                <h2>Aumento de
-Faturamento</h2>
+                <h2>Aumento de Faturamento</h2>
               </div>
               <div>
                 <img src={box} alt="" />
@@ -343,33 +314,28 @@ Faturamento</h2>
             </div>
           </div>
           <div className="container-carosel">
-            <img src={farmaclin} alt="Farma Clin" />
+            <img className='hero' src={cheirinBao} alt="logo cheirinBao" />
             <div className="container-data">
-              <h1>Farma Clin</h1>
-              <h2>Guaratiba</h2>
+              <h1>O que foi feito?</h1>
+              <ul>
+                <li><img src={carimbo} alt="carimbo"/> Marketing digital e Social Media</li>
+                <li><img src={roundComputer} alt="icone computador"/> Implementação de Sistema de Gestão</li>
+                <li><img src={star} alt="estrela"/> Gestão de Estoque: Entrada e Saída</li>
+                <li><img src={star} alt="estrela"/> Organização Física do estabelecimento</li>
+              </ul>
             </div>
-            <div className="container-data-1">
-              <p>
-                Vi meu negócio crescer diante dos meus olhos como mágica,
-                recomendo a Andro para todos.
-              </p>
-              <h5> - Rodrigo, Dono das Farmácias</h5>
+            <h1>Resultados</h1>
+            <div className="container-result">
+              <div>
+                <h1>65%↓</h1>
+                <h2>Redução de depesas fixas e variáveis</h2>
+              </div>
+              <div>
+                <img src={box} alt="" />
+                <h2>Estoque com pedidos automatizados</h2>
+              </div>
             </div>
           </div>
-          {/* <div className="container-carosel">
-            <img src={parceiro1} alt="Farma Clin" />
-            <div className="container-data">
-              <h1>Farma Clin</h1>
-              <h2>Guaratiba</h2>
-            </div>
-            <div className="container-data-1">
-              <p>
-                Vi meu negócio crescer diante dos meus olhos como mágica,
-                recomendo a Andro para todos.
-              </p>
-              <h5> - Rodrigo, Dono das Farmácias</h5>
-            </div>
-          </div> */}
         </div>
       </section>
       {/* =============== */}
