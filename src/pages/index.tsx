@@ -4,13 +4,8 @@ import { Nav, Header, Buttom } from '../styles/header';
 
 import Head from 'next/head';
 
-import logoAndro from '../../public/logo-andro.svg';
 import logoAndro2 from '../assets/logo-andro.svg';
 import backgroundImage from '../assets/Andro-hero.svg';
-import imageGestão from '../assets/Vector_Gestão.png';
-import imageGestão1 from '../assets/Vetor-2.png';
-import imageGestão2 from '../assets/Vetor-3.png';
-import service from '../assets/services.png';
 import cieeImage from '../assets/Ciee.png';
 import quantoSobraImage from '../assets/quanto_sobra.png';
 import parceiro1 from '../assets/perceiro1.png';
@@ -41,6 +36,15 @@ import solucoes from '../assets/icons/image 5.svg';
 import acoes from '../assets/icons/image 6.svg';
 import projeto from '../assets/icons/image 8.svg';
 import number from '../assets/Group 6.svg';
+
+// ICONS
+import carimbo from '../assets/icons/stamp (1).svg';
+import roundComputer from '../assets/icons/round-computer.svg';
+import star from '../assets/icons/star-review.svg';
+import box from '../assets/icons/box.svg';
+
+// LOGO CLIENTES
+import farmaclin from '../assets/clients/farmaclin.png';
 
 export default function Home() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -307,24 +311,39 @@ export default function Home() {
       </section>
 
       {/* NOSSOS CLIENTES */}
-      <section id="client">
-        <h1>Nossos Clientes</h1>
+      <section id="clients">
+        <div className='container-title'>
+          <h1>Nossos Clientes</h1>
+          <p>Conheça nossos clientes que tiveram seu negócio transformado!</p>
+        </div>
         <div className="container-cliente" ref={caroselRef2}>
           <div className="container-carosel">
-            <img src={parceiro2} alt="Farma Clin" />
+            <img src={farmaclin} alt="Farma Clin" />
             <div className="container-data">
-              <h1>Cheirin Bão</h1>
-              <h2>Nossa Senhora da Paz</h2>
+              <h1>O que foi feito?</h1>
+              <ul>
+                <li><span><img src={carimbo} alt="carimbo"/></span> Criação de Identidade Visual</li>
+                <li><img src={carimbo} alt="carimbo"/> Marketing digital e Social Media</li>
+                <li><img src={roundComputer} alt="icone computador"/> Implementação de Sistema de Gestão</li>
+                <li><img src={star} alt="estrela"/> Gestão de Estoque: Entrada e Saída</li>
+                <li><img src={star} alt="estrela"/> Organização Física do estabelecimento</li>
+              </ul>
             </div>
-            <div className="container-data-1">
-              <p>
-                A Andro me surpreendeu com se profissionalismo, meu negócio lucrou como nunca!
-              </p>
-              <h5> - Chris, dona da franqueada</h5>
+            <h1>Resultados</h1>
+            <div className="container-result">
+              <div>
+                <h1>45%↑</h1>
+                <h2>Aumento de
+Faturamento</h2>
+              </div>
+              <div>
+                <img src={box} alt="" />
+                <h2>Estoque com pedidos automatizados</h2>
+              </div>
             </div>
           </div>
           <div className="container-carosel">
-            <img src={parceiro1} alt="Farma Clin" />
+            <img src={farmaclin} alt="Farma Clin" />
             <div className="container-data">
               <h1>Farma Clin</h1>
               <h2>Guaratiba</h2>
@@ -337,7 +356,7 @@ export default function Home() {
               <h5> - Rodrigo, Dono das Farmácias</h5>
             </div>
           </div>
-          <div className="container-carosel">
+          {/* <div className="container-carosel">
             <img src={parceiro1} alt="Farma Clin" />
             <div className="container-data">
               <h1>Farma Clin</h1>
@@ -350,7 +369,7 @@ export default function Home() {
               </p>
               <h5> - Rodrigo, Dono das Farmácias</h5>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* =============== */}
