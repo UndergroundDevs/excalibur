@@ -42,10 +42,21 @@ import carimbo from '../assets/icons/stamp (1).svg';
 import roundComputer from '../assets/icons/round-computer.svg';
 import star from '../assets/icons/star-review.svg';
 import box from '../assets/icons/box.svg';
+import paper from '../assets/icons/paper.svg';
+import coin from '../assets/icons/coing.svg';
+import person from '../assets/icons/person.svg';
+import arrowRight from '../assets/icons/arrow-right.svg';
 
 // LOGO CLIENTES
 import farmaclin from '../assets/clients/farmaclin.png';
 import cheirinBao from '../assets/clients/cheirinbao.png';
+import doceria1 from '../assets/clients/doceria-1.png';
+import mrwolf from '../assets/clients/mr wolf.jpg';
+
+// GIFS
+import consEmpresa from '../assets/gif/Social strategy.png';
+import departamentos from '../assets/gif/Scrum board.png';
+import invoice from '../assets/gif/Invoice.png';
 
 export default function Home() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -193,7 +204,7 @@ export default function Home() {
       <Header isColoraBlue={isBlue} ref={coloHeader}>
         <div className="container-logo">
           <a href="P-home" ref={home}>
-            <img src={logoAndro2} alt="Águia em branco com um fundo azul"/>
+            <img src={logoAndro2} alt="Águia em branco com um fundo azul" />
           </a>
         </div>
         <Nav open={isOpenMenu} ref={myNav}>
@@ -212,11 +223,11 @@ export default function Home() {
         </div>
         <img src={backgroundImage} alt="Leão representando a logo da empresa" />
       </section>
-      
+
       <section id="whatwedo">
         <div className="container-title">
           <h1>O que nós fazemos?</h1>
-          <h2>Oferecemos mais que serviços, com entrega rápida e trabalho<br/>humanizado, somos a melhor escolha para seu negócio.</h2>
+          <h2>Oferecemos mais que serviços, com entrega rápida e trabalho<br />humanizado, somos a melhor escolha para seu negócio.</h2>
         </div>
 
         <div
@@ -225,50 +236,50 @@ export default function Home() {
         >
           <div className="we">
             <div className="image">
-            <img src={necessidades} alt="necessidades" />
+              <img src={necessidades} alt="necessidades" />
             </div>
             <h1>Necessidades</h1>
             <p>
-            Levantar as dores e necessidades do cliente.
+              Levantar as dores e necessidades do cliente.
             </p>
           </div>
 
           <div className="we">
             <div className="image">
-            <img src={solucoes} alt="necessidades" />
+              <img src={solucoes} alt="necessidades" />
             </div>
             <h1>Soluções</h1>
             <p>
-            Identificar todas as possibilidades de soluções e avaliar cada questão em específico.
+              Identificar todas as possibilidades de soluções e avaliar cada questão em específico.
             </p>
           </div>
 
           <div className="we">
             <div className="image">
-            <img src={acoes} alt="acoes" />
+              <img src={acoes} alt="acoes" />
             </div>
             <h1>Ações</h1>
             <p>
-            Recomendar ações de curto e longo prazos, a fim de gerar negócios e reduzir custos.
+              Recomendar ações de curto e longo prazos, a fim de gerar negócios e reduzir custos.
             </p>
           </div>
 
           <div className="we">
             <div className="image">
-            <img src={projeto} alt="necessidades" />
+              <img src={projeto} alt="necessidades" />
             </div>
             <h1>Projeto</h1>
             <p>
-            Desenvolver, implantar e viabilizar o projeto de acordo com as metas de cada cliente.
+              Desenvolver, implantar e viabilizar o projeto de acordo com as metas de cada cliente.
             </p>
           </div>
         </div>
       </section>
       <section id="numbers">
         <div className="row">
-          <img src={number} alt="desenho de 2 pessoas construindo casa"/>
+          <img src={number} alt="desenho de 2 pessoas construindo casa" />
           <div className="element">
-            <h1>+15</h1>
+            <h1>+20</h1>
             <h2>Empresas renovadas em <span>8 meses</span></h2>
           </div>
           <div className="element">
@@ -288,55 +299,162 @@ export default function Home() {
           <h1>Nossos Clientes</h1>
           <p>Conheça nossos clientes que tiveram seu negócio transformado!</p>
         </div>
-        <div className="container-cliente">
-          <div className="container-carosel">
-            <img className='hero' src={farmaclin} alt="Farma Clin" />
-            <div className="container-data">
-              <h1>O que foi feito?</h1>
-              <ul>
-                <li><span><img src={carimbo} alt="carimbo"/></span> Criação de Identidade Visual</li>
-                <li><img src={carimbo} alt="carimbo"/> Marketing digital e Social Media</li>
-                <li><img src={roundComputer} alt="icone computador"/> Implementação de Sistema de Gestão</li>
-                <li><img src={star} alt="estrela"/> Gestão de Estoque: Entrada e Saída</li>
-                <li><img src={star} alt="estrela"/> Organização Física do estabelecimento</li>
-              </ul>
-            </div>
-            <h1>Resultados</h1>
-            <div className="container-result">
-              <div>
-                <h1>45%↑</h1>
-                <h2>Aumento de Faturamento</h2>
+        <div className="rows">
+          <div className="container-cliente">
+            <div className="container-carosel">
+              <img className='hero' src={farmaclin} alt="Farma Clin" />
+              <div className="container-data">
+                <h1>O que foi feito?</h1>
+                <ul>
+                  <li><span><img src={carimbo} alt="carimbo" /></span> Criação de Identidade Visual</li>
+                  <li><img src={carimbo} alt="carimbo" /> Marketing digital e Social Media</li>
+                  <li><img src={roundComputer} alt="icone computador" /> Implementação de Sistema de Gestão</li>
+                  <li><img src={star} alt="estrela" /> Gestão de Estoque: Entrada e Saída</li>
+                  <li><img src={star} alt="estrela" /> Organização Física do estabelecimento</li>
+                </ul>
               </div>
-              <div>
-                <img src={box} alt="" />
-                <h2>Estoque com pedidos automatizados</h2>
+              <h1>Resultados</h1>
+              <div className="container-result">
+                <div>
+                  <h1>45%↑</h1>
+                  <h2>Aumento de Faturamento</h2>
+                </div>
+                <div>
+                  <img src={box} alt="" />
+                  <h2>Estoque com pedidos automatizados</h2>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="container-carosel">
-            <img className='hero' src={cheirinBao} alt="logo cheirinBao" />
-            <div className="container-data">
-              <h1>O que foi feito?</h1>
-              <ul>
-                <li><img src={carimbo} alt="carimbo"/> Marketing digital e Social Media</li>
-                <li><img src={roundComputer} alt="icone computador"/> Implementação de Sistema de Gestão</li>
-                <li><img src={star} alt="estrela"/> Gestão de Estoque: Entrada e Saída</li>
-                <li><img src={star} alt="estrela"/> Organização Física do estabelecimento</li>
-              </ul>
-            </div>
-            <h1>Resultados</h1>
-            <div className="container-result">
-              <div>
-                <h1>65%↓</h1>
-                <h2>Redução de depesas fixas e variáveis</h2>
+            <div className="container-carosel">
+              <img className='hero' src={cheirinBao} alt="logo cheirinBao" />
+              <div className="container-data">
+                <h1>O que foi feito?</h1>
+                <ul>
+                  <li><img src={carimbo} alt="carimbo" /> Marketing digital e Social Media</li>
+                  <li><img src={roundComputer} alt="icone computador" /> Implementação de Sistema de Gestão</li>
+                  <li><img src={star} alt="estrela" /> Gestão de Estoque: Entrada e Saída</li>
+                  <li><img src={star} alt="estrela" /> Organização Física do estabelecimento</li>
+                </ul>
               </div>
-              <div>
-                <img src={box} alt="" />
-                <h2>Estoque com pedidos automatizados</h2>
+              <h1>Resultados</h1>
+              <div className="container-result">
+                <div>
+                  <h1>65%↓</h1>
+                  <h2>Redução de depesas fixas e variáveis</h2>
+                </div>
+                <div>
+                  <img src={box} alt="" />
+                  <h2>Estoque com pedidos automatizados</h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        
+      </section>
+      <section id="clients-2">
+        <div className="rows">
+          <div className="container-cliente">
+            <div className="container-carosel">
+              <img className='hero' src={doceria1} alt="Doceria 1" />
+              <div className="container-data">
+                <h1>O que foi feito?</h1>
+                <ul>
+                  <li><span><img src={carimbo} alt="carimbo" /></span> Criação de Identidade Visual</li>
+                  <li><img src={carimbo} alt="carimbo" /> Marketing digital e Social Media</li>
+                  <li><img src={roundComputer} alt="icone computador" /> Implementação de Sistema de Gestão</li>
+                  <li><img src={star} alt="estrela" /> Gestão de Estoque: Entrada e Saída</li>
+                  <li><img src={star} alt="estrela" /> Organização Física do estabelecimento</li>
+                </ul>
+              </div>
+              <h1>Resultados</h1>
+              <div className="container-result">
+                <div>
+                  <img src={paper} alt="icone de cardápio" />
+                  <h2>Aumento no cardápio e produtos</h2>
+                </div>
+                <div>
+                  <img src={coin} alt="" />
+                  <h2>Melhoria do controle financeiro</h2>
+                </div>
+              </div>
+            </div>
+            <div className="container-carosel">
+              <img className='hero' src={mrwolf} alt="logo cliente mrwolf" />
+              <div className="container-data">
+                <h1>O que foi feito?</h1>
+                <ul>
+                  <li><span><img src={carimbo} alt="carimbo" /></span> Criação de Identidade Visual</li>
+                  <li><img src={carimbo} alt="carimbo" /> Marketing digital e Social Media</li>
+                  <li><img src={roundComputer} alt="icone computador" /> Implementação de Sistema de Gestão</li>
+                  <li><img src={star} alt="estrela" /> Gestão de Estoque: Entrada e Saída</li>
+                  <li><img src={star} alt="estrela" /> Organização Física do estabelecimento</li>
+                </ul>
+              </div>
+              <h1>Resultados</h1>
+              <div className="container-result">
+                <div>
+                  <h1>45%↑</h1>
+                  <h2>Aumento de faturamento</h2>
+                </div>
+                <div>
+                  <img src={box} alt="" />
+                  <h2>Estoque com pedidos automatizados</h2>
+                </div>
+              </div>
+            </div>
+            <div className="container-tambem-quero">
+              <img className='hero' src={person} alt="logo cheirinBao" />
+              <h1>TAMBÉM QUERO SER UM CASE DE SUCESSO!</h1>
+              <a href="#">Fale conosco <img src={arrowRight} alt="arrow to the right"/></a>                
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* =============== */}
+
+      {/* SERVIÇOS */}
+      <section id="service">
+        <div className='container-title'>
+          <h1>Serviços</h1>
+          <p>Oferecemos o serviço que seu negócio necessita. Para um<br/>serviço personalizado, entre em contato.</p>
+        </div>
+        <div className="row">
+          <div className="container-services">
+            <div className="container-carosel">
+              <img className='hero' src={consEmpresa} alt="peças de xadrez" />
+              <div className="container-data">
+                <h1>Consultoria
+Empresarial</h1>
+                <p>Através de análise e pesquisa, planejamos o melhor meio de gerenciar o seu projeto tornando-o mais eficaz e qualificado a atuação no mercado atual.</p>
+              </div>
+            </div>
+            <div className="container-carosel">
+              <img className='hero' src={departamentos} alt="post its" />
+              <div className="container-data">
+                <h1>Assessoria de Departamentos</h1>
+                <ul>
+                  Terceirização de serviços
+                  <li>Administrativo</li>
+                  <li>Financeiro</li>
+                  <li>Comercial</li>
+                  <li>Marketing Digital</li>
+                  <li>Recursos Humanos</li>
+                  <li>Social Media</li>
+                </ul>
+              </div>
+            </div>
+            <div className="container-carosel">
+              <img className='hero' src={invoice} alt="peças de xadrez" />
+              <div className="container-data">
+                <h1>Consultoria
+Empresarial</h1>
+                <p>Através de análise e pesquisa, planejamos o melhor meio de gerenciar o seu projeto tornando-o mais eficaz e qualificado a atuação no mercado atual.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </section>
       {/* =============== */}
 
@@ -344,7 +462,7 @@ export default function Home() {
         <div className="description-section">
           <h1 className="align-text-to-right">Possua o gerenciamento mais eficiente</h1>
           <h2 className="align-text-to-right">
-          Administre de forma ágil e precisa o fluxo do seu negócio.
+            Administre de forma ágil e precisa o fluxo do seu negócio.
           </h2>
           <ul>
             <li>Controle de Estoque</li>
@@ -356,7 +474,7 @@ export default function Home() {
         <img src={imgScrum} alt="reunião entre dirigentes com slide no fundo" />
       </section>
       <section id="home-part-two">
-      <img src={imgInvoice} alt="reunião entre dirigentes com slide no fundo" />
+        <img src={imgInvoice} alt="reunião entre dirigentes com slide no fundo" />
         <div className="description-section">
           <h1>Retome o controle do seu dinheiro</h1>
           <h2>Reduza gastos, otimizando sua renda e fazendo investimentos mais certeiros.</h2>
@@ -372,10 +490,10 @@ export default function Home() {
         <div className="description-section">
           <h1 className="align-text-to-right">Desburocratize seu negócio</h1>
           <h2 className="align-text-to-right">
-          Cuidamos da papelada, organizando
-          e acertando todos os termos
-          facilitando o desenvolvimento do
-          seu empreendimento.
+            Cuidamos da papelada, organizando
+            e acertando todos os termos
+            facilitando o desenvolvimento do
+            seu empreendimento.
           </h2>
           <ul>
             <li>Análise de documentação</li>
@@ -398,7 +516,7 @@ export default function Home() {
         >
           <div className="we">
             <div className="image">
-            <img src={Leandro} alt="Leandro" />
+              <img src={Leandro} alt="Leandro" />
             </div>
             <h1>LEANDRO MENDES</h1>
             <p>
@@ -410,11 +528,11 @@ export default function Home() {
 
           <div className="we">
             <div className="image">
-            <img src={Wanghley} alt="Wanghley" />
+              <img src={Wanghley} alt="Wanghley" />
             </div>
             <h1>WANGHLEY MARTINS</h1>
             <p>
-            Pesquisador, empreendedor social, cientista e analista de dados e desenvolvedor de sistemas especialistas. Tem experiência na área de Computação com enfase em ciência de dados, solução criativa de problemas, empreendedorismo verde, empreendedorismo Juvenil, Desenvolvimento Desktop, WEB e mobile.
+              Pesquisador, empreendedor social, cientista e analista de dados e desenvolvedor de sistemas especialistas. Tem experiência na área de Computação com enfase em ciência de dados, solução criativa de problemas, empreendedorismo verde, empreendedorismo Juvenil, Desenvolvimento Desktop, WEB e mobile.
 
             </p>
             <h2>Consultor de Tecnologia e Inovação</h2>
@@ -425,18 +543,18 @@ export default function Home() {
             </div>
             <h1>DAVI COLARES</h1>
             <p>
-            Redator e designer freelancer, pesquisador e empreendedor, 17 anos. Experiência em oratória, marketing digital, estratégias empresariais, desenvolvimento de identidade visual, experiência de usuário e interface, gestão de mídias.
+              Redator e designer freelancer, pesquisador e empreendedor, 17 anos. Experiência em oratória, marketing digital, estratégias empresariais, desenvolvimento de identidade visual, experiência de usuário e interface, gestão de mídias.
 
             </p>
             <h2>Consultor de Mídia</h2>
           </div>
           <div className="we">
-          <div className="image">
+            <div className="image">
               <img src={Thiago} alt="Thiago" />
             </div>
             <h1>THIAGO ROCHA</h1>
             <p>
-            Formando em Administração de empresas e com experiência nas áreas de recursos humanos e finanças em consultoria e multinacional. Com foco em encontrar soluções, desenvolvimento empresarial e planejamento estratégico.
+              Formando em Administração de empresas e com experiência nas áreas de recursos humanos e finanças em consultoria e multinacional. Com foco em encontrar soluções, desenvolvimento empresarial e planejamento estratégico.
 
             </p>
             <h2>CONSULTOR ADMINISTRATIVO</h2>
@@ -447,29 +565,29 @@ export default function Home() {
             </div>
             <h1>PAULO GUILHERME</h1>
             <p>
-            Tem 20 anos, empreendedor, analista de processos e gestor logístico. Experiência em gestão de projetos, desenvolver diagnósticos, mapear fluxos de atividade, planejar estratégias e aplicar alternativas, soluções para melhoria dos processos, controle logístico, armazenagem e demanda de estoque.
+              Tem 20 anos, empreendedor, analista de processos e gestor logístico. Experiência em gestão de projetos, desenvolver diagnósticos, mapear fluxos de atividade, planejar estratégias e aplicar alternativas, soluções para melhoria dos processos, controle logístico, armazenagem e demanda de estoque.
 
             </p>
             <h2>CONSULTOR DE PROJETOS</h2>
           </div>
           <div className="we">
             <div className="image">
-            <img src={Cibele} alt="Wanghley" />
+              <img src={Cibele} alt="Wanghley" />
             </div>
             <h1>CIBELE DINIZ</h1>
             <p>
-            Pré-universitária com expriência em edição de vídeos e ilustrações, buscando sempre inovar e se expressar através da estética audiovisual.
+              Pré-universitária com expriência em edição de vídeos e ilustrações, buscando sempre inovar e se expressar através da estética audiovisual.
 
             </p>
             <h2>Consultora de Mídia</h2>
           </div>
           <div className="we">
             <div className="image">
-            <img src={Lucas} alt="Wanghley" />
+              <img src={Lucas} alt="Wanghley" />
             </div>
             <h1>LUCAS COELHO</h1>
             <p>
-            Certificado pela Hansai em engenharia de processos para negócios e com experiência em gerência de tráfego, marketing digital, gestão de mídias, design para mídias e empreendedorismo social.
+              Certificado pela Hansai em engenharia de processos para negócios e com experiência em gerência de tráfego, marketing digital, gestão de mídias, design para mídias e empreendedorismo social.
 
             </p>
             <h2>Consultor de processos</h2>
@@ -484,8 +602,8 @@ export default function Home() {
             <img src={quality} alt="" />
             <h3>Gestão de <br />Qualidade</h3>
             <p>Missão, Visão e Valores;
-            Conjunto de políticas e diretrizes;
-            Relação de poder e comando da organização. 
+              Conjunto de políticas e diretrizes;
+              Relação de poder e comando da organização.
             </p>
           </div>
           <div className="service-2">
@@ -497,32 +615,32 @@ export default function Home() {
             <img src={rh} alt="" />
             <h3>Recursos<br /> Humanos</h3>
             <p>Processo de Recrutamento e seleção;
-            Folha de pagamento;
-            Plano de cargos e salários;
-            e muito mais.
+              Folha de pagamento;
+              Plano de cargos e salários;
+              e muito mais.
             </p>
           </div>
           <div className="service-4">
             <img src={comercial} alt="" />
             <h3>Comercial & <br />Marketing</h3>
-            <p>Réguas de relacionamento comercial 
-            <br/>
-            Estratégias atuais de Marketing Digital. 
+            <p>Réguas de relacionamento comercial
+              <br />
+              Estratégias atuais de Marketing Digital.
             </p>
           </div>
           <div className="service-5">
             <img src={financeiro} alt="" />
             <h3>Financeiro</h3>
             <p>Principais processos do fluxo de caixa;
-            Realização de tarefas inerentes à contabilidade e controles;
-            e muito mais.
+              Realização de tarefas inerentes à contabilidade e controles;
+              e muito mais.
             </p>
           </div>
           <div className="service-6">
             <img src={processos} alt="" />
             <h3>Processos e Qualidade</h3>
             <p>Situação atual e melhoria nos principais processos;
-            Como é realizada a gestão de qualidade.
+              Como é realizada a gestão de qualidade.
             </p>
           </div>
         </div>
