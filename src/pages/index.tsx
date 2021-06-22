@@ -36,6 +36,7 @@ import solucoes from '../assets/icons/image 5.svg';
 import acoes from '../assets/icons/image 6.svg';
 import projeto from '../assets/icons/image 8.svg';
 import number from '../assets/Group 6.svg';
+import mosaic from '../assets/Andro-mosaic.svg'
 
 // ICONS
 import carimbo from '../assets/icons/stamp (1).svg';
@@ -457,22 +458,19 @@ Empresarial</h1>
         
       </section>
       {/* =============== */}
+      {/* SOMOS A ANDRO */}
+      <section id="somos">
+        <div className="description">
+          <h1>Somos Andro.</h1>
+          <p>Nosso objetivo é levar estratégias e gestão à empresas que buscam inovação e entendem a importância destes fatores para o sucesso do negócio. Com nossos resultados adaptamos e reinventamos estratégias já existentes, gerando uma nova metodologia, onde implementamos a cultura de pequenas vitórias, para o alcance do sucesso como um todo.</p>
+          <p>Todo esse processo depende  do coletivo com real envolvimento do cliente em todas as inovações e decisões. Isso ajuda a identificar problemas específicos e a propor soluções reais para gerar os resultados positivos.</p>
 
-      <section id="home-part-two">
-        <div className="description-section">
-          <h1 className="align-text-to-right">Possua o gerenciamento mais eficiente</h1>
-          <h2 className="align-text-to-right">
-            Administre de forma ágil e precisa o fluxo do seu negócio.
-          </h2>
-          <ul>
-            <li>Controle de Estoque</li>
-            <li>Fluxograma dos processos e dos departamentos</li>
-            <li>Gestão de Arquivos e Documentos</li>
-          </ul>
-          {/* <a href="#">impusione seu negócio</a> */}
+          <a href="#contact">QUERO SABER MAIS</a>
         </div>
-        <img src={imgScrum} alt="reunião entre dirigentes com slide no fundo" />
+        <div className="leon"><img src={mosaic} alt="reunião entre dirigentes com slide no fundo" /></div>
       </section>
+      {/* =============== */}
+
       <section id="home-part-two">
         <img src={imgInvoice} alt="reunião entre dirigentes com slide no fundo" />
         <div className="description-section">

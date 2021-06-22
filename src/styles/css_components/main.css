@@ -1470,6 +1470,46 @@ footer .container .social-medias a#copy {
 
   }
   /* ----------------------------- */
+  /* SOMOS A ANDRO */
+  section#somos {
+    display: flex;
+    position: relative;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    background-color: #040A25;
+  }
+  section#somos .description {
+    display: inline-block;
+    width: 60%;
+    padding: 1rem 1rem 1rem 10%;
+  }
+  section#somos .description h1{
+    font-family: 'Fira Sans',sans-serif;
+    color: #EDF0FD;
+    font-size: 3rem;
+    padding-top: 4rem;
+  }
+  section#somos .description p{
+    font-family: 'Fira Sans',sans-serif;
+    color: #EDF0FD;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-top: 30px;
+    max-width: 80%;
+  }
+  section#somos .leon {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    vertical-align: top;
+    vertical-align: middle;
+  }
+  section#somos .leon img {
+    width:80%;
+  
+  }
+  /* ----------------------------- */
 
   section#about .container-about .image img {
     height: 220px;
