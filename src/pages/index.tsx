@@ -47,6 +47,8 @@ import paper from '../assets/icons/paper.svg';
 import coin from '../assets/icons/coing.svg';
 import person from '../assets/icons/person.svg';
 import arrowRight from '../assets/icons/arrow-right.svg';
+import money from '../assets/icons/money (2).svg';
+import stairs from '../assets/icons/i-stairs.svg';
 
 // LOGO CLIENTES
 import farmaclin from '../assets/clients/farmaclin.png';
@@ -58,6 +60,10 @@ import mrwolf from '../assets/clients/mr wolf.jpg';
 import consEmpresa from '../assets/gif/Social strategy.png';
 import departamentos from '../assets/gif/Scrum board.png';
 import invoice from '../assets/gif/Invoice.png';
+
+// PARTNERS
+import quantoSobra from '../assets/partners/quanto_sobra.png'
+import ciee from '../assets/partners/CIEE.png'
 
 export default function Home() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -124,37 +130,6 @@ export default function Home() {
       });
     });
 
-    const slide = caroselRef.current;
-
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    slide.addEventListener('mousedown', (event) => {
-      isDown = true;
-      slide.classList.add('active');
-      startX = event.pageX - slide.offsetLeft;
-      scrollLeft = slide.scrollLeft;
-    });
-
-    slide.addEventListener('mouseleave', () => {
-      isDown = false;
-      slide.classList.remove('active');
-    });
-
-    slide.addEventListener('mouseup', () => {
-      isDown = false;
-      slide.classList.remove('active');
-    });
-
-    slide.addEventListener('mousemove', (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - slide.offsetLeft;
-      const walk = (x - startX) * 2.5; //scroll-fast
-      slide.scrollLeft = scrollLeft - walk;
-    });
-
     const slideWhatWeDo = caroselRefWhatWeDo.current;
 
     let isDown3 = false;
@@ -209,7 +184,7 @@ export default function Home() {
           </a>
         </div>
         <Nav open={isOpenMenu} ref={myNav}>
-          <a href="P-about">Quem Somos</a>
+          <a href="P-somos">Quem Somos</a>
           <a href="P-client">Como Trabalhamos</a>
           <a href="P-partnerships">Clientes</a>
           <button>Fale Conosco</button>
@@ -351,7 +326,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
+
       </section>
       <section id="clients-2">
         <div className="rows">
@@ -407,18 +382,17 @@ export default function Home() {
             <div className="container-tambem-quero">
               <img className='hero' src={person} alt="logo cheirinBao" />
               <h1>TAMBÉM QUERO SER UM CASE DE SUCESSO!</h1>
-              <a href="#">Fale conosco <img src={arrowRight} alt="arrow to the right"/></a>                
+              <a href="#">Fale conosco <img src={arrowRight} alt="arrow to the right" /></a>
             </div>
           </div>
         </div>
       </section>
       {/* =============== */}
-
       {/* SERVIÇOS */}
       <section id="service">
         <div className='container-title'>
           <h1>Serviços</h1>
-          <p>Oferecemos o serviço que seu negócio necessita. Para um<br/>serviço personalizado, entre em contato.</p>
+          <p>Oferecemos o serviço que seu negócio necessita. Para um<br />serviço personalizado, entre em contato.</p>
         </div>
         <div className="row">
           <div className="container-services">
@@ -426,7 +400,7 @@ export default function Home() {
               <img className='hero' src={consEmpresa} alt="peças de xadrez" />
               <div className="container-data">
                 <h1>Consultoria
-Empresarial</h1>
+                  Empresarial</h1>
                 <p>Através de análise e pesquisa, planejamos o melhor meio de gerenciar o seu projeto tornando-o mais eficaz e qualificado a atuação no mercado atual.</p>
               </div>
             </div>
@@ -449,13 +423,13 @@ Empresarial</h1>
               <img className='hero' src={invoice} alt="peças de xadrez" />
               <div className="container-data">
                 <h1>Consultoria
-Empresarial</h1>
+                  Empresarial</h1>
                 <p>Através de análise e pesquisa, planejamos o melhor meio de gerenciar o seu projeto tornando-o mais eficaz e qualificado a atuação no mercado atual.</p>
               </div>
             </div>
           </div>
         </div>
-        
+
       </section>
       {/* =============== */}
       {/* SOMOS A ANDRO */}
@@ -470,232 +444,106 @@ Empresarial</h1>
         <div className="leon"><img src={mosaic} alt="reunião entre dirigentes com slide no fundo" /></div>
       </section>
       {/* =============== */}
-
-      <section id="home-part-two">
-        <img src={imgInvoice} alt="reunião entre dirigentes com slide no fundo" />
-        <div className="description-section">
-          <h1>Retome o controle do seu dinheiro</h1>
-          <h2>Reduza gastos, otimizando sua renda e fazendo investimentos mais certeiros.</h2>
-          <ul>
-            <li>Extrato (Pagar e Receber) </li>
-            <li>Fluxo de Caixa</li>
-            <li>Projeções e Métricas</li>
-            <li>Criação de Relatórios</li>
-          </ul>
-        </div>
-      </section>
-      <section id="home-part-two">
-        <div className="description-section">
-          <h1 className="align-text-to-right">Desburocratize seu negócio</h1>
-          <h2 className="align-text-to-right">
-            Cuidamos da papelada, organizando
-            e acertando todos os termos
-            facilitando o desenvolvimento do
-            seu empreendimento.
-          </h2>
-          <ul>
-            <li>Análise de documentação</li>
-            <li>Elaboração de Contratos</li>
-            <li>Processos em andamento</li>
-          </ul>
-        </div>
-        <img src={imgLaw} alt="reunião entre dirigentes com slide no fundo" />
-      </section>
-
-      <section id="about">
-        <div className="container-title">
-          <h1>Nossa <br />Equipe</h1>
-          <h2>de profissionais qualificados em fazer seu negócio dar certo.</h2>
-        </div>
-
-        <div
-          className="container-about"
-          ref={caroselRef}
-        >
-          <div className="we">
-            <div className="image">
-              <img src={Leandro} alt="Leandro" />
-            </div>
-            <h1>LEANDRO MENDES</h1>
-            <p>
-              Fundador e Consultor Técnico da Andro, 28 anos. Formado em RH, Administração de Empresas e MBA em Gestão de Negocios. Trabalhou durante 8 anos com Administração de empresa e gestão de projetos.
-
-            </p>
-            <h2>CEO da Andro Consultoria e Assessoria</h2>
+      {/* PARCEIROS */}
+      <section id="partners">
+        <h1 className="title">nossos parceiros</h1>
+        <div className="business">
+          <div className="circle">
+            <img src={quantoSobra} alt="" />
           </div>
-
-          <div className="we">
-            <div className="image">
-              <img src={Wanghley} alt="Wanghley" />
-            </div>
-            <h1>WANGHLEY MARTINS</h1>
-            <p>
-              Pesquisador, empreendedor social, cientista e analista de dados e desenvolvedor de sistemas especialistas. Tem experiência na área de Computação com enfase em ciência de dados, solução criativa de problemas, empreendedorismo verde, empreendedorismo Juvenil, Desenvolvimento Desktop, WEB e mobile.
-
-            </p>
-            <h2>Consultor de Tecnologia e Inovação</h2>
+          <div className="circle">
+            <img src={ciee} alt="" />
           </div>
-          <div className="we">
-            <div className="image">
-              <img src={Davi} alt="Davi" />
-            </div>
-            <h1>DAVI COLARES</h1>
-            <p>
-              Redator e designer freelancer, pesquisador e empreendedor, 17 anos. Experiência em oratória, marketing digital, estratégias empresariais, desenvolvimento de identidade visual, experiência de usuário e interface, gestão de mídias.
-
-            </p>
-            <h2>Consultor de Mídia</h2>
+          <div className="circle">
+            <img src={ciee} alt="" />
           </div>
-          <div className="we">
-            <div className="image">
-              <img src={Thiago} alt="Thiago" />
-            </div>
-            <h1>THIAGO ROCHA</h1>
-            <p>
-              Formando em Administração de empresas e com experiência nas áreas de recursos humanos e finanças em consultoria e multinacional. Com foco em encontrar soluções, desenvolvimento empresarial e planejamento estratégico.
-
-            </p>
-            <h2>CONSULTOR ADMINISTRATIVO</h2>
-          </div>
-          <div className="we">
-            <div className="image">
-              <img src={Paulo} alt="Paulo" />
-            </div>
-            <h1>PAULO GUILHERME</h1>
-            <p>
-              Tem 20 anos, empreendedor, analista de processos e gestor logístico. Experiência em gestão de projetos, desenvolver diagnósticos, mapear fluxos de atividade, planejar estratégias e aplicar alternativas, soluções para melhoria dos processos, controle logístico, armazenagem e demanda de estoque.
-
-            </p>
-            <h2>CONSULTOR DE PROJETOS</h2>
-          </div>
-          <div className="we">
-            <div className="image">
-              <img src={Cibele} alt="Wanghley" />
-            </div>
-            <h1>CIBELE DINIZ</h1>
-            <p>
-              Pré-universitária com expriência em edição de vídeos e ilustrações, buscando sempre inovar e se expressar através da estética audiovisual.
-
-            </p>
-            <h2>Consultora de Mídia</h2>
-          </div>
-          <div className="we">
-            <div className="image">
-              <img src={Lucas} alt="Wanghley" />
-            </div>
-            <h1>LUCAS COELHO</h1>
-            <p>
-              Certificado pela Hansai em engenharia de processos para negócios e com experiência em gerência de tráfego, marketing digital, gestão de mídias, design para mídias e empreendedorismo social.
-
-            </p>
-            <h2>Consultor de processos</h2>
+          <div className="circle">
+            <img src={ciee} alt="" />
           </div>
         </div>
       </section>
-
-      <section id="services">
-        <h1>O que fazemos</h1>
-        <div className="container-services">
-          <div className="service-1">
-            <img src={quality} alt="" />
-            <h3>Gestão de <br />Qualidade</h3>
-            <p>Missão, Visão e Valores;
-              Conjunto de políticas e diretrizes;
-              Relação de poder e comando da organização.
-            </p>
-          </div>
-          <div className="service-2">
-            <img src={tech} alt="" />
-            <h3>Tecnologias e <br />Sistemas</h3>
-            <p>Sistemas especialistas para o seu negócio, conforme sua demanda. Desde estoque à site promocional.</p>
-          </div>
-          <div className="service-3">
-            <img src={rh} alt="" />
-            <h3>Recursos<br /> Humanos</h3>
-            <p>Processo de Recrutamento e seleção;
-              Folha de pagamento;
-              Plano de cargos e salários;
-              e muito mais.
-            </p>
-          </div>
-          <div className="service-4">
-            <img src={comercial} alt="" />
-            <h3>Comercial & <br />Marketing</h3>
-            <p>Réguas de relacionamento comercial
-              <br />
-              Estratégias atuais de Marketing Digital.
-            </p>
-          </div>
-          <div className="service-5">
-            <img src={financeiro} alt="" />
-            <h3>Financeiro</h3>
-            <p>Principais processos do fluxo de caixa;
-              Realização de tarefas inerentes à contabilidade e controles;
-              e muito mais.
-            </p>
-          </div>
-          <div className="service-6">
-            <img src={processos} alt="" />
-            <h3>Processos e Qualidade</h3>
-            <p>Situação atual e melhoria nos principais processos;
-              Como é realizada a gestão de qualidade.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="client">
-        <h1>Nossos Clientes</h1>
-        <div className="container-cliente" ref={caroselRef2}>
+      {/* =============== */}
+      {/* WHAT WE DO SPECIFIC*/}
+      <section id="whatdowedospecific">
+        <h1 className="title">O que nós fazemos?</h1>
+        <div className="row">
           <div className="container-carosel">
-            <img src={parceiro2} alt="Farma Clin" />
+            <img className='hero' src={acoes} alt="peças de xadrez" />
             <div className="container-data">
-              <h1>Cheirin Bão</h1>
-              <h2>Nossa Senhora da Paz</h2>
+              <h1>Gestão
+                <span><br />Estratégica</span></h1>
+              <ul>
+                <li>Plano de Metas</li>
+                <li>Planejamento Estratégico</li>
+                <li>Plano de negócios</li>
+                <li>Pesquisa de mercado</li>
+              </ul>
             </div>
-            <div className="container-data-1">
-              <p>
-                A Andro me surpreendeu com se profissionalismo, meu negócio lucrou como nunca!
-              </p>
-              <h5> - Chris, dona da franqueada</h5>
+          </div>
+          <div className="container-carosel middle">
+            <img className='hero' src={money} alt="post its" />
+            <div className="container-data">
+              <h1>Gestão<span><br />Financeira</span></h1>
+              <ul>
+                <li>Revisão de Custos e Despesas</li>
+                <li>Valuation</li>
+                <li>Inovação de Ciclo de Caixa</li>
+                <li>Planejamento Financeiro</li>
+              </ul>
             </div>
           </div>
           <div className="container-carosel">
-            <img src={parceiro1} alt="Farma Clin" />
+            <img className='hero' src={star} alt="peças de xadrez" />
             <div className="container-data">
-              <h1>Farma Clin</h1>
-              <h2>Guaratiba</h2>
-            </div>
-            <div className="container-data-1">
-              <p>
-                Vi meu negócio crescer diante dos meus olhos como mágica,
-                recomendo a Andro para todos.
-              </p>
-              <h5> - Rodrigo, Dono das Farmácias</h5>
-            </div>
-          </div>
-          <div className="container-carosel">
-            <img src={parceiro1} alt="Farma Clin" />
-            <div className="container-data">
-              <h1>Farma Clin</h1>
-              <h2>Guaratiba</h2>
-            </div>
-            <div className="container-data-1">
-              <p>
-                Vi meu negócio crescer diante dos meus olhos como mágica,
-                recomendo a Andro para todos.
-              </p>
-              <h5> - Rodrigo, Dono das Farmácias</h5>
+              <h1>Gestão<span><br />Talentos</span></h1>
+              <ul>
+                <li>Revisão de Custos e Despesas</li>
+                <li>Valuation</li>
+                <li>Inovação de Ciclo de Caixa</li>
+                <li>Planejamento Financeiro</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
 
-      <section id="partnerships">
-        <h1>Nosssos Parceiros</h1>
-        <div className="container-partnerships">
-          <img src={quantoSobraImage} alt="quanto sobra" />
-          <img src={cieeImage} alt="Centro de integração Empresa-Escola" />
+        <div className="row">
+          <div className="container-carosel">
+            <img className='hero' src={carimbo} alt="peças de xadrez" />
+            <div className="container-data">
+              <h1>Processo<span><br />Branding</span></h1>
+              <ul>
+                <li>Plano de Metas</li>
+                <li>Planejamento Estratégico</li>
+                <li>Plano de negócios</li>
+                <li>Pesquisa de mercado
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="middle container-carosel">
+            <img className='hero' src={roundComputer} alt="post its" />
+            <div className="container-data">
+              <h1><span>Tecnologia</span> &<br /><span>Informação</span></h1>
+              <ul>
+                <li>Revisão de Custos e Despesas</li>
+                <li>Valuation</li>
+                <li>Inovação de Ciclo de Caixa</li>
+                <li>Planejamento Financeiro</li>
+              </ul>
+            </div>
+          </div>
+          <div className="container-carosel">
+            <img className='hero' src={stairs} alt="peças de xadrez" />
+            <div className="container-data">
+              <h1>Gestão<br /><span>Processos</span></h1>
+              <ul>
+                <li>Revisão de Custos e Despesas</li>
+                <li>Valuation</li>
+                <li>Inovação de Ciclo de Caixa</li>
+                <li>Planejamento Financeiro</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 

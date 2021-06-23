@@ -1478,17 +1478,19 @@ footer .container .social-medias a#copy {
     width: 100%;
     flex-direction: row;
     background-color: #040A25;
+    padding-bottom: 3rem;
   }
   section#somos .description {
     display: inline-block;
     width: 60%;
     padding: 1rem 1rem 1rem 10%;
+    justify-content: left;
   }
   section#somos .description h1{
     font-family: 'Fira Sans',sans-serif;
     color: #EDF0FD;
     font-size: 3rem;
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
   section#somos .description p{
     font-family: 'Fira Sans',sans-serif;
@@ -1504,12 +1506,151 @@ footer .container .social-medias a#copy {
     position: relative;
     vertical-align: top;
     vertical-align: middle;
+    text-align: right;  
   }
   section#somos .leon img {
-    width:80%;
-  
+    width:100%;
+  }
+  section#somos .description a {
+    width: 40%;
+    height: auto;
+    text-transform: uppercase;
+    background-color: #1789FC; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-top: 2rem;
   }
   /* ----------------------------- */
+  /* PARTNERS */
+  section#partners {
+    display: flex;
+    flex-direction: column;
+    background-color: #040A25;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  section#partners h1.title{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-family: 'Fira Sans',sans-serif;
+  }
+  section#partners .business {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 10% 2rem 10%;
+  }
+  section#partners .business .circle {
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 2rem;
+    margin: 0 auto;
+  }
+  section#partners .business .circle img{
+    display:block;
+    margin:auto;
+    width: 100%;
+    height: auto;
+  }
+  /* ----------------------------- */
+  /* Specific what do we do */
+  section#whatdowedospecific {
+    width: 100%;
+    height: auto;
+    padding: 3rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #040A25;
+    color: #fff;
+  }
+  section#whatdowedospecific h1.title {
+    margin-bottom: 2rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-left: 13%;
+  }
+  section#whatdowedospecific .row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: all 0.2s;
+    cursor: default;
+    text-align: center;
+    padding: 0rem 10% 0rem 10%;
+  }
+  section#whatdowedospecific .row:last-child {
+    margin-top: -3rem;
+  }
+  section#whatdowedospecific .row .container-carosel {
+    background-color: #FFFFFF;
+    width: 220px;
+    min-width: 300px;
+    height: 400px;
+    max-height: 400px;
+    padding: 15px;
+    border-radius: 14px;
+    justify-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem !important;
+    align-content: center;
+    color: #0A1857;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  section#whatdowedospecific .row .container-carosel h1 {
+    font-family: 'Fira Sans',sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+  section#whatdowedospecific .row .container-carosel h1 span {
+    font-weight: 800;
+  }
+  section#whatdowedospecific .row .container-carosel ul {
+    padding: 0 2rem 0 2rem;
+    text-align: left;
+    padding-top: 1.25rem;
+    font-family: 'Fira Sans',sans-serif;
+    font-size: 1.2rem;
+  }
+  section#whatdowedospecific .row .container-carosel img {
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 10px;
+  }
+  section#whatdowedospecific .row .middle {
+    margin-top: 5rem;
+  }
+  /* ----------------------------- */
+
 
   section#about .container-about .image img {
     height: 220px;
