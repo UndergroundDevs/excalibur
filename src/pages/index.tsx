@@ -78,6 +78,10 @@ export default function Home() {
   const caroselRefWhatWeDo = useRef<HTMLDivElement>(null);
   const ancorCopy = useRef<HTMLDivElement>(null);
 
+  function onClickHeader(element) {
+    document.getElementById('contato').scrollIntoView();
+  }
+
   function openMenu() {
     setIsOpenMenu(!isOpenMenu)
   }
@@ -185,9 +189,9 @@ export default function Home() {
         </div>
         <Nav open={isOpenMenu} ref={myNav}>
           <a href="P-somos">Quem Somos</a>
-          <a href="P-client">Como Trabalhamos</a>
-          <a href="P-partnerships">Clientes</a>
-          <button>Fale Conosco</button>
+          <a href="P-whatdowedospecific">Como Trabalhamos</a>
+          <a href="P-clients">Clientes</a>
+          <button onClick={onClickHeader}>Fale Conosco</button>
         </Nav>
       </Header>
 
@@ -546,30 +550,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section id="contact">
-        <div className="container-contact-title">
-          <h1>Entre em contato</h1>
-          <h2>
-            Preencha os dados de contato pra gente
-            se conhecer melhor e marcarmos uma conversa 😉
-          </h2>
-        </div>
+      {/* =============== */}
+      {/* CONTACT */}
+      <section id="contato">
         <form onSubmit={handleSubmit}>
-          <fieldset>
-            <label htmlFor="name">Nome:</label>
-            <input type="text" name="name" id="name" />
-
-            <label htmlFor="email">e-mail:</label>
-            <input type="email" name="email" id="email" />
-
-            <label htmlFor="body">Mensagem:</label>
-            <textarea name="body" id="body" cols={10} rows={10} />
-            <button type="submit">Enviar</button>
-          </fieldset>
-        </form>
+            <fieldset>
+              <h1>Entre em contato agora mesmo e ganhe uma análise do seu negócio!</h1>
+              <input type="text" name="name" id="name" placeholder="Seu nome aqui"/>
+              <input type="email" name="email" id="email" placeholder="Digite seu melhor email aqui"/>
+              <textarea name="body" id="body" cols={10} rows={10} placeholder="Nos conte um pouco sobre o seu negócio"/>
+              <button type="submit">solicite uma análise gratuita</button>
+            </fieldset>
+          </form>
       </section>
-
+      {/* =============== */}
       <Buttom
         open={isOpenMenu}
         onClick={() => { openMenu() }}

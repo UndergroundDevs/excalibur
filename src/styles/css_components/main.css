@@ -690,9 +690,9 @@ footer {
 footer>h1 {
   font-family: Fira Sans;
   font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  color: #27427E;
+  font-weight: 400;
+  font-size: .9rem;
+  color: #040A25;
   margin-top: 20px;
   max-width: 100%;
 }
@@ -1650,6 +1650,95 @@ footer .container .social-medias a#copy {
     margin-top: 5rem;
   }
   /* ----------------------------- */
+  /* CONTACT */
+  section#contato {
+    height: auto;
+    background: linear-gradient(to bottom, #040A25 0%,#040A25 50%,#040A25 50%,white 50%,white 100%);
+    width: 100%;
+  }
+  section#contato form {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    max-width: 65%;
+    display:table;/* shrinks to fit content */
+    margin:auto;
+    border: 6px solid #1789FC;
+    border-radius: 26px;
+  }
+  
+  section#contato form fieldset {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 20px;
+    align-items: left;
+  }
+  section#contato form fieldset h1 {
+    text-align: left;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding-top: 1.5rem;
+  }
+  
+  section#contato form fieldset input {
+    width: 100%;
+    max-width: 560px;
+    height: 40px;
+    background: rgba(40, 46, 51, 0);
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Fira Sans',sans-serif;
+    font-size: 1.01rem;
+    border: 2px solid #040A25;
+    margin-top: 1.1rem;
+  }
+  
+  section#contato form fieldset textarea {
+    width: 100% !important;
+    height: 200px !important;
+    max-height: 200px;
+    background: rgba(40, 46, 51, 0);
+    border-radius: 20px;
+    margin-top: 5px !important;
+    padding: 20px;
+    font-family: 'Fira Sans',sans-serif;
+    font-size: 1.08rem;
+    border: 2px solid #040A25;
+    max-width: 560px;
+    margin-top: 1.5rem !important;
+  }
+  
+  section#contato form fieldset button {
+    width: 40%;
+    height: 50px;
+    border: 2px solid #142766;
+    box-sizing: border-box;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: #1789FC; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  section#contato form fieldset button:active{
+    background-color: #274690;
+  }
+  
+  /* ----------------------------- */
 
 
   section#about .container-about .image img {
@@ -1724,9 +1813,11 @@ footer .container .social-medias a#copy {
     margin-top: 0;
     margin-left: 40px;
     align-items: center;
+    margin-bottom: -.5rem;
   }
   footer .container .social-medias a {
     margin-left: 5px;
+    font-weight: 400;
   }
 
   section#services .container-services {
