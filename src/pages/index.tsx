@@ -553,12 +553,13 @@ export default function Home() {
       {/* =============== */}
       {/* CONTACT */}
       <section id="contato">
-        <form onSubmit={handleSubmit}>
+        <form action="https://formspree.io/f/xvodqpbg" method="POST">
+        {/* onSubmit={handleSubmit} */}
             <fieldset>
               <h1>Entre em contato agora mesmo e ganhe uma análise do seu negócio!</h1>
               <input type="text" name="name" id="name" placeholder="Seu nome aqui"/>
-              <input type="email" name="email" id="email" placeholder="Digite seu melhor email aqui"/>
-              <textarea name="body" id="body" cols={10} rows={10} placeholder="Nos conte um pouco sobre o seu negócio"/>
+              <input type="email" name="_replyto" id="email" placeholder="Digite seu melhor email aqui"/>
+              <textarea name="message" id="body" cols={10} rows={10} placeholder="Nos conte um pouco sobre o seu negócio"/>
               <button type="submit">solicite uma análise gratuita</button>
             </fieldset>
           </form>
