@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import { Nav, Header, Buttom } from '../styles/header';
 
 import Head from 'next/head';
+import Navbar from '../components/whatsapp';
 
 import logoAndro2 from '../assets/logo-andro.svg';
 import backgroundImage from '../assets/Andro-hero.svg';
@@ -180,7 +181,6 @@ export default function Home() {
         <title>Andro | Consultoria e Assessoria</title>
         <link rel="icon" href="/logo_azul.png" />
       </Head>
-
       <Header isColoraBlue={isBlue} ref={coloHeader}>
         <div className="container-logo">
           <a href="P-home" ref={home}>
@@ -194,7 +194,6 @@ export default function Home() {
           <button onClick={onClickHeader}>Fale Conosco</button>
         </Nav>
       </Header>
-
       <section id="home">
         <h1>A agilidade e eficiência que seu negócio precisa</h1>
         <div className="container-services">
@@ -203,6 +202,10 @@ export default function Home() {
         </div>
         <img src={backgroundImage} alt="Leão representando a logo da empresa" />
       </section>
+
+      <div id="wpp">
+      <Navbar/>
+      </div>
 
       <section id="whatwedo">
         <div className="container-title">
