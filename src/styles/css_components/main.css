@@ -272,7 +272,7 @@ section#clients .container-title p {
 
 }
 section#clients .container-cliente {
-  width: 95%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -282,7 +282,7 @@ section#clients .container-cliente {
 }
 section#clients .container-cliente .container-carosel {
   background-color: #FFFFFF;
-  width: auto;
+  width: 95%;
   max-height: 600px;
   padding: 15px;
   border-radius: 38px;
@@ -350,17 +350,17 @@ section#clients .container-cliente .container-carosel .container-result div h1 {
   color: #1789FC;
   font-style: normal;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 section#clients .container-cliente .container-carosel .container-result h2 {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: lighter;
   text-align: center;
 }
 section#clients .container-cliente .container-carosel .container-result div img{
-  width: 50px;
+  width: 40px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -386,8 +386,7 @@ section#clients-2 .rows .container-cliente {
 }
 section#clients-2 .container-cliente .container-carosel {
   background-color: #FFFFFF;
-  width: auto;
-  min-width: 290px;
+  width: 95%;
   height: auto;
   padding: 15px;
   border-radius: 38px;
@@ -441,20 +440,21 @@ section#clients-2 .container-cliente .container-carosel .container-result {
   display: flex;
   flex-direction: row;
   padding: 1rem 1rem 1rem 1rem;
+  width: 100%;
 }
 section#clients-2 .container-cliente .container-carosel .container-result div {
   display: flex;
   flex-direction: column;
 }
 section#clients-2 .container-cliente .container-carosel .container-result div:first-child {
-  margin-right: 25px;
+  margin-right: 10px;
 }
 section#clients-2 .container-cliente .container-carosel .container-result div h1 {
   font-family: 'Fira Sans', sans-serif;
   color: #1789FC;
   font-style: normal;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 section#clients-2 .container-cliente .container-carosel .container-result h2 {
@@ -464,7 +464,7 @@ section#clients-2 .container-cliente .container-carosel .container-result h2 {
   text-align: center;
 }
 section#clients-2 .container-cliente .container-carosel .container-result div img{
-  width: 50px;
+  width: 40px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -473,8 +473,7 @@ section#clients-2 .container-cliente .container-carosel .container-result div im
 }
 section#clients-2 .container-cliente .container-tambem-quero {
   background-color: #FFFFFF;
-  width: 350px;
-  min-width: 290px;
+  width: 100%;
   height: auto;
   padding: 15px;
   border-radius: 38px;
