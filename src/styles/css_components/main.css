@@ -553,7 +553,7 @@ section#service .row .container-services {
 }
 section#service .row .container-services .container-carosel {
   background-color: #FFFFFF;
-  width: 100%px;
+  width: 100%;
   min-width: 290px;
   height: auto;
   min-height: 350px;
@@ -1320,6 +1320,7 @@ footer .container .social-medias a#copy {
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
     transition: all 0.2s;
@@ -1437,6 +1438,7 @@ footer .container .social-medias a#copy {
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
     transition: all 0.2s;
@@ -1622,15 +1624,14 @@ footer .container .social-medias a#copy {
     overflow-x: auto;
     overflow-y: hidden;
     transition: all 0.2s;
-    will-change: transform;
     cursor: pointer;
     margin-left: 10%;
     margin-top: 1rem;
+    flex-direction: row;
   }
   section#service .row .container-services .container-carosel {
     background-color: #FFFFFF;
-    width: 250px;
-    min-width: 290px;
+    min-width: 300px;
     height: auto;
     min-height: 350px;
     padding: 15px;
