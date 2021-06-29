@@ -404,7 +404,7 @@ export default function Home() {
       <section id="service">
         <div className='container-title'>
           <h1>Serviços</h1>
-          <p>Oferecemos o serviço que seu negócio necessita. Para um<br />serviço personalizado, entre em contato.</p>
+          <p>Oferecemos o serviço que seu negócio necessita. Para um serviço personalizado, entre em contato.</p>
         </div>
         <div className="row">
           <div className="container-services">
@@ -586,7 +586,7 @@ export default function Home() {
       >
         <span></span>
       </Buttom>
-
+      <hr />
       <footer>
         <div className="container">
           <div className="social-medias">
@@ -606,6 +606,7 @@ export default function Home() {
             <a onClick={copyEmail} id="copy" href="comercial@androconsult.com.br">comercial@androconsult.com.br</a>
           </div>
         </div>
+        <hr />
         <h1>Copyright© 2021 Andro Consultoria & Assessoria | Feito com ❤️ pela <a href="http://www.undergrounds.rf.gd/" target="_blank">Underground Devs</a></h1>
       </footer>
     </>

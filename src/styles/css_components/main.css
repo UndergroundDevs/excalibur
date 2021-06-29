@@ -514,308 +514,360 @@ section#clients-2 .container-cliente .container-tambem-quero a img{
 }
 
 /* ====================== */
-section#services {
+/* SERVICES */
+section#service {
+  width: 100%;
+  height: auto;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+section#service .container-title h1{
+  color: #040A25;
+  font-weight: 600;
+  font-size: 2.25rem;
+  font-family: 'Fira Sans', sans-serif;
+}
+section#service .container-title p{
+  color: #040A25;
+  font-weight: normal;
+  font-size: 1.05rem;
+  font-family: 'Fira Sans', sans-serif;
+  margin-top: 10px;
+  max-width: 90%;
+}
+section#service .row {
+  display: flex;
+  flex-direction: column;
+}
+section#service .row .container-services {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+section#service .row .container-services .container-carosel {
+  background-color: #FFFFFF;
+  width: 100%px;
+  min-width: 290px;
+  height: auto;
+  min-height: 350px;
+  padding: 15px;
+  border-radius: 14px;
+  border: 4px solid #1789FC;
+  margin-right: 8%;
+  justify-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem !important;
+  align-content: center;
+}
+section#service .row .container-services .container-carosel img.hero{
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 10px;
+}
+section#service .row .container-services .container-carosel .container-data h1{
+  font-family: 'Fira Sans',sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+section#service .row .container-services .container-carosel .container-data p{
+  font-family: 'Fira Sans',sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px 1.2rem 10px 1.2rem;
+}
+section#service .row .container-services .container-carosel .container-data ul{
+  font-family: 'Fira Sans',sans-serif;
+  text-align: left;
+  font-size: 1rem;
+  padding: 10px 1rem 10px 1rem;
+
+}
+section#service .row .container-services .container-carosel .container-data ul li{
+  margin-left: 40px;
+
+
+}
+/* ====================== */
+/* SOMOS A ANDRO */
+section#somos {
+  display: flex;
+  position: relative;
+  height: auto;
+  width: 100%;
+  flex-direction: column-reverse;
+  background-color: #040A25;
+  padding-bottom: 3rem;
+}
+section#somos .description {
+  display: inline-block;
+  padding: 1rem 1rem 1rem 2rem;
+  justify-content: left;
+}
+section#somos .description h1{
+  font-family: 'Fira Sans',sans-serif;
+  color: #EDF0FD;
+  font-size: 3rem;
+  padding-top: 3rem;
+}
+section#somos .description p{
+  font-family: 'Fira Sans',sans-serif;
+  color: #EDF0FD;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  margin-top: 10px;
+  padding-right: 1rem;
+  text-align: justify;
+}
+section#somos .leon {
+  display: inline-block;
+  width: auto;
+  position: relative;
+  vertical-align: top;
+  vertical-align: middle;
+  text-align: right;  
+}
+section#somos .leon img {
+  width:100%;
+}
+section#somos .description a {
+  width: 95%;
+  height: auto;
+  text-transform: uppercase;
+  background-color: #1789FC; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+/* ====================== */
+/* PARTNERS */
+section#partners {
+  display: flex;
+  flex-direction: column;
+  background-color: #040A25;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+  margin-top: -1rem;
+}
+section#partners h1.title{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  font-family: 'Fira Sans',sans-serif;
+  font-size: 2.25rem;
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+}
+section#partners .business {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+section#partners .business .circle {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 1rem auto;
+}
+section#partners .business .circle img{
+  display:block;
+  margin:auto;
+  width: 100%;
+  height: auto;
+}
+/*===============================*/
+/* SPECIFIC WHAT DO WE DO */
+section#whatdowedospecific {
   width: 100%;
   height: auto;
   padding: 3rem 1rem 3rem 1rem;
+  margin-top: -1rem;
   display: flex;
   flex-direction: column;
+  background-color: #040A25;
+  color: #fff;
 }
-section#services h1 {
+section#whatdowedospecific h1.title {
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 600;
-  font-size: 2rem;
-  color: #27427E;
+  font-size: 2.25rem;
+  padding-top: 2rem;
 }
-section#services .container-services {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  row-gap: 50px;
-  flex-direction: column;
-}
-section#services .container-services p {
-  max-width: 200px;
-  text-align: center;
-  font-size: 1rem;
-  padding-top: 10px;
-}
-section#services .container-services img {
-  width: 150px;
-}
-section#services .container-services .service-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-section#services .container-services h3 {
-  color: #455A64;
-  font-family: 'Fira Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-section#services .container-services .service-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-section#services .container-services .service-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-section#services .container-services .service-4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-section#services .container-services .service-5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-section#services .container-services .service-6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/*===============================*/
-section#client {
-  width: 100%;
-  height: auto;
-  padding: 3rem 1rem 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  background-color: #142766;
-}
-
-section#client h1 {
-  color: #FFF;
-  text-align: center;
-  font-family: 'Fira Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 2rem;
-}
-
-section#client .container-cliente {
+section#whatdowedospecific .row {
   width: 100%;
   height: auto;
   display: flex;
-  overflow-x: auto;
+  flex-direction: column;
+  overflow-x: hidden;
   overflow-y: hidden;
   transition: all 0.2s;
-  will-change: transform;
-  cursor: pointer;
+  cursor: default;
+  text-align: center;
+  padding: 0rem 1rem 0rem 1rem;
 }
-
-section#client .container-cliente .container-carosel {
+section#whatdowedospecific .row .container-carosel {
   background-color: #FFFFFF;
-  width: 290px;
-  min-width: 290px;
-  height: 400px;
+  width: 100%;
+  min-width: 100px;
+  height: auto;
+  max-height: 400px;
   padding: 15px;
-  border-radius: 38px;
-  margin-right: 40px;
-  display: grid;
-  grid-template-columns: 1fr 0;
-  grid-template-rows: auto auto auto;
+  border-radius: 14px;
   justify-items: center;
   margin-top: 1rem;
+  margin-bottom: 2rem !important;
   align-content: center;
+  color: #0A1857;
+  display: inline-block;
+  margin: 0 auto;
 }
-
-section#client .container-cliente .container-carosel img {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  width: 150px;
+section#whatdowedospecific .row .container-carosel h1 {
+  font-family: 'Fira Sans',sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
 }
-
-section#client .container-cliente .container-carosel .container-data {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  display: flex;
-  flex-direction: column;
+section#whatdowedospecific .row .container-carosel h1 span {
+  font-weight: 800;
 }
-
-section#client .container-cliente .container-carosel .container-data h1 {
-  color: #27427E;
-  text-align: center;
-  font-family: 'Fira Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.5rem;
+section#whatdowedospecific .row .container-carosel ul {
+  padding: 0 2rem 0 2rem;
+  text-align: left;
+  padding-top: 1.25rem;
+  font-family: 'Fira Sans',sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
 }
-
-section#client .container-cliente .container-carosel .container-data h2 {
-  color: #27427E;
-  text-align: center;
-  font-family: 'Fira Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-section#client .container-cliente .container-carosel .container-data-1 {
-  grid-column: 1/2;
-  grid-row: 3/4;
-  display: flex;
-  flex-direction: column;
-}
-
-section#client .container-cliente .container-carosel .container-data-1 p {
-  font-family: Fira Sans;
-  font-weight: 600;
-  font-size: 1rem;
-  text-align: justify;
-  color: #455A64;
-  margin-top: 15px;
-}
-
-section#client .container-cliente .container-carosel .container-data-1 h5 {
-  font-family: Fira Sans;
-  font-weight: 600;
-  font-size: .8rem;
-  text-align: justify;
-  color: #455A64;
-  margin-top: 15px;
-}
-
-section#partnerships {
-  width: 100%;
-  height: auto;
-  padding: 3rem 1rem 16rem 1rem;
-}
-
-section#partnerships h1 {
-  color: #27427E;
-  text-align: center;
-  font-family: 'Fira Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 2rem;
-}
-
-section#partnerships .container-partnerships {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-section#partnerships .container-partnerships img {
+section#whatdowedospecific .row .container-carosel img {
   height: 100px;
-  width: auto;
-  object-fit: contain;
-  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 10px;
 }
 
 /*===============================*/
-
-section#contact {
+/* CONTACT */
+section#contato {
+  height: auto;
+  background: linear-gradient(to bottom, #040A25 0%,#040A25 50%,#040A25 50%,white 50%,white 100%);
+  width: 100%;
+  margin-top: -1rem;
+}
+section#contato form {
   width: 100%;
   height: auto;
-  padding: 3rem 1rem 1rem 1rem;
-  background-color: #142766;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: 0;
+  max-width: 90%;
+  display:table;/* shrinks to fit content */
+  margin:auto;
+  border: 6px solid #1789FC;
+  border-radius: 26px;
 }
-
-section#contact .container-contact-title {
-  width: 100%;
-  height: auto;
-}
-
-section#contact .container-contact-title h1 {
-  color: #FFF;
-  text-align: left;
-  font-family: 'Fira Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 2rem;
-}
-
-section#contact .container-contact-title h2 {
-  color: #FFF;
-  text-align: left;
-  font-family: 'Fira Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-section#contact form {
-  width: 100%;
-  height: auto;
-  margin-top: 2rem;
-  max-width: 438px;
-}
-
-section#contact form fieldset {
+section#contato form fieldset {
   background-color: #FFF;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   border-radius: 20px;
-  align-items: center;
+  align-items: left;
 }
-
-section#contact form fieldset label {
-  font-family: Fira Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1rem;
-  color: #455A64;
-  margin-top: 2rem;
-  align-self: flex-start;
-}
-
-section#contact form fieldset input {
+section#contato form fieldset h1 {
+  text-align: left;
   width: 100%;
-  max-width: 500px;
-  height: 40px;
-  background: rgba(40, 46, 51, 0.31);
-  border-radius: 20px;
-  margin-top: 5px;
-  padding: 10px 20px 10px 20px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding-top: 1.5rem;
 }
-
-section#contact form fieldset textarea {
+section#contato form fieldset input {
+  width: 100%;
+  max-width: 560px;
+  height: 40px;
+  background: rgba(40, 46, 51, 0);
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  font-family: 'Fira Sans',sans-serif;
+  font-size: 1.01rem;
+  border: 2px solid #040A25;
+  margin-top: 1.1rem;
+}
+section#contato form fieldset textarea {
   width: 100% !important;
   height: 200px !important;
   max-height: 200px;
-  background: rgba(40, 46, 51, 0.31);
+  background: rgba(40, 46, 51, 0);
   border-radius: 20px;
   margin-top: 5px !important;
   padding: 20px;
+  font-family: 'Fira Sans',sans-serif;
+  font-size: 1.08rem;
+  border: 2px solid #040A25;
+  max-width: 560px;
+  margin-top: 1.5rem !important;
 }
-
-section#contact form fieldset button {
-  width: 186px;
-  height: 30px;
+section#contato form fieldset button {
+  width: auto;
+  height: 50px;
   border: 2px solid #142766;
   box-sizing: border-box;
   border-radius: 30px;
-  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #1789FC; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
-
+section#contato form fieldset button:active{
+  background-color: #274690;
+}
+/*===============================*/
+/* FOOTER */
 footer {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: auto;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -824,11 +876,12 @@ footer {
 footer>h1 {
   font-family: Fira Sans;
   font-style: normal;
-  font-weight: 400;
-  font-size: .9rem;
+  font-weight: lighter;
+  font-size: .8rem;
   color: #040A25;
   margin-top: 20px;
   max-width: 100%;
+  height: auto;
 }
 
 footer a {
@@ -840,11 +893,12 @@ footer a {
 footer .container {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 
 footer .container .social-medias {
   display: flex;
-  margin-top: 70px;
+  margin-top: 10px;
   align-items: center;
 }
 
