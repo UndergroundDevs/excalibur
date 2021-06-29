@@ -205,7 +205,7 @@ export default function Home() {
         <h1>A agilidade e eficiência que seu negócio precisa</h1>
         <div className="container-services">
           <h2>Somos uma empresa de prestação de serviços para quem já possui ou vai iniciar um negócio e necessita de soluções criativas em financeiro, marketing, pessoas, operacional ou estratégico.</h2>
-          <a href="#second-chance">Solicite uma análise gratuita</a>
+          <a href="#contato">Solicite uma análise gratuita</a>
         </div>
         <img src={backgroundImage} alt="Leão representando a logo da empresa" />
       </section>
