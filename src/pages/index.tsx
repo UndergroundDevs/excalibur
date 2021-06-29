@@ -63,8 +63,10 @@ import departamentos from '../assets/gif/Scrum board.png';
 import invoice from '../assets/gif/Invoice.png';
 
 // PARTNERS
-import quantoSobra from '../assets/partners/quanto_sobra.png'
-import ciee from '../assets/partners/CIEE.png'
+import quantoSobra from '../assets/partners/quantosobra.png';
+import ciee from '../assets/partners/CIEE.png';
+import SAAssessoria from '../assets/partners/SA-assessoria.png';
+import TCAdvocacia from '../assets/partners/Tavares-advocacia.png';
 
 export default function Home() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -180,7 +182,12 @@ export default function Home() {
       <Head>
         <title>Andro | Consultoria e Assessoria</title>
         <link rel="icon" href="/logo_azul.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
       </Head>
+
+      {/* WHATSAPP BUTTON */}
+      <a href="https://wa.me/5521982523513?text=Olá!Pode%20me%20ajudar?" className="float" target="_blank"><i className="fa fa-whatsapp my-float"></i></a>
+
       <Header isColoraBlue={isBlue} ref={coloHeader}>
         <div className="container-logo">
           <a href="P-home" ref={home}>
@@ -203,9 +210,7 @@ export default function Home() {
         <img src={backgroundImage} alt="Leão representando a logo da empresa" />
       </section>
 
-      <div id="wpp">
-      <Navbar/>
-      </div>
+      {/* <Navbar/> */}
 
       <section id="whatwedo">
         <div className="container-title">
@@ -389,7 +394,7 @@ export default function Home() {
             <div className="container-tambem-quero">
               <img className='hero' src={person} alt="logo cheirinBao" />
               <h1>TAMBÉM QUERO SER UM CASE DE SUCESSO!</h1>
-              <a href="#">Fale conosco <img src={arrowRight} alt="arrow to the right" /></a>
+              <a href="#contato">Fale conosco <img src={arrowRight} alt="arrow to the right" /></a>
             </div>
           </div>
         </div>
@@ -420,18 +425,25 @@ export default function Home() {
                   <li>Administrativo</li>
                   <li>Financeiro</li>
                   <li>Comercial</li>
-                  <li>Marketing Digital</li>
-                  <li>Recursos Humanos</li>
-                  <li>Social Media</li>
+                  <li>Marketing Digital / Social Media</li>
+                  <li>Recursos Humanos / Departamento pessoal</li>
                 </ul>
               </div>
             </div>
             <div className="container-carosel">
               <img className='hero' src={invoice} alt="peças de xadrez" />
               <div className="container-data">
-                <h1>Consultoria
-                  Empresarial</h1>
-                <p>Através de análise e pesquisa, planejamos o melhor meio de gerenciar o seu projeto tornando-o mais eficaz e qualificado a atuação no mercado atual.</p>
+                <h1>Assesoria Plus+</h1>
+                <ul>
+                  <li>Treinamento</li>
+                  <ul>
+                    <li>Vendas</li>
+                    <li>Inovações Tecnológicas</li>
+                    <li>Clima organizacional</li>
+                  </ul>
+                  <li>Serviços de Contabilidade</li>
+                  <li>Assessoria Jurídica</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -462,10 +474,10 @@ export default function Home() {
             <img src={ciee} alt="" />
           </div>
           <div className="circle">
-            <img src={ciee} alt="" />
+            <img src={SAAssessoria} alt="" />
           </div>
           <div className="circle">
-            <img src={ciee} alt="" />
+            <img src={TCAdvocacia} alt="" />
           </div>
         </div>
       </section>
@@ -587,7 +599,7 @@ export default function Home() {
           </div>
           <div className="social-medias">
             <img src={logoInstagram} alt="Instagram" />
-            <a target="_blank" href="https://www.instagram.com/androaac/">@androaac</a>
+            <a target="_blank" href="https://www.instagram.com/androconsulta">@androconsult</a>
           </div>
           <div className="social-medias">
             <img src={logoMail} alt="Email" />

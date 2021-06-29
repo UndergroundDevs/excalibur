@@ -1,11 +1,22 @@
-div#wpp Navbar {
-  z-index: 3;
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:80px;
+	right:10px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
 }
 
-div#wpp {
-  height: 1px;
-  z-index: 300;
+.my-float{
+	margin-top:16px;
 }
+
 
 section#home {
   width: 100%;
@@ -742,6 +753,25 @@ footer .container .social-medias a#copy {
 }
 
 @media (min-width: 728px) {
+  .float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+  }
+  
+  .my-float{
+    margin-top:16px;
+  }
+
   .description-section-align-to-right {
     display: flex;
     flex-direction: column;
