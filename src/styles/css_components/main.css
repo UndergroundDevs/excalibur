@@ -1,3 +1,5 @@
+/* MOBILE */
+/* WHATSAPP FLOAT BUTTON */
 .float{
 	position:fixed;
 	width:60px;
@@ -12,12 +14,12 @@
 	box-shadow: 2px 2px 3px #999;
   z-index:100;
 }
-
 .my-float{
 	margin-top:16px;
 }
+/* ====================== */
 
-
+/* HEADER */
 section#home {
   width: 100%;
   height: 100vh !important;
@@ -82,174 +84,8 @@ section#home img {
   max-width: 98%;
   margin-top: -2rem;
 }
-
 /*===============================*/
 
-section#home-part-two {
-  display: grid;
-  grid-template-columns: 1fr 0;
-  grid-template-rows: 1fr 1fr;
-  padding: 3rem 1rem 1rem 1rem;
-  height: auto;
-  width: 100%;
-}
-section#home-part-two img {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  width: 100%;
-  margin-top: -2rem;
-  justify-self: center;
-}
-section#home-part-two .description-section {
-  grid-row: 1/2;
-}
-section#home-part-two .description-section ul {
-  font-size: 0.8rem;
-  list-style: none;
-  font-family: Fira Sans;
-  font-style: normal;
-  font-weight: normal;
-  white-space: nowrap;
-  color: #3a3a3a;
-  margin-top: 20px;
-}
-section#home-part-two .description-section li {
-  text-align: left;
-}
-section#home-part-two .description-section li:before {
-  content: "»";
-  padding-right: 5px;
-}
-section#home-part-two .description-section h1 {
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #27427E;
-}
-section#home-part-two .description-section h2 {
-  margin-top: 1rem;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #27427E;
-}
-section#home-part-two .description-section a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 40px;
-  width: 286px;
-  height: 41px;
-  margin-top: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #FFFFFF;
-  background-color: #27427E;
-  transition: opacity .6s;
-}
-section#home-part-two .description-section a:hover {
-  opacity: .9;
-}
-/*===============================*/
-
-section#about {
-  padding: 3rem 1rem 1rem 1rem;
-  width: 100%;
-  height: auto;
-  background-color: #142766;
-  display: flex;
-  flex-direction: column;
-}
-section#about .container-about {
-  width: auto;
-  height: 400px;
-  margin-top: 20px;
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  transition: all 0.2s;
-  transform: scale(0.98);
-  will-change: transform;
-  cursor: pointer;
-}
-section#about div.container-about::-webkit-scrollbar {
-  display: none;
-}
-section#about .container-about div.we {
-  background-color: #FFFFFF;
-  height: auto;
-  width: 300px;
-  min-width: 300px;
-  min-height: 300px;
-  display: grid;
-  grid-template-columns: 1fr 0 0;
-  grid-template-rows: auto auto auto auto;
-  justify-items: center;
-  padding: 20px;
-  border-radius: 38px;
-  margin-right: 40px;
-}
-section#about .container-about div.we p {
-  padding: 0 10px 10px 10px;
-  text-align: justify;
-}
-section#about .container-about .image img {
-  height: 200px;
-  margin-top: -20px;
-}
-section#about .container-about h1 {
-  grid-row: 2/3;
-  white-space: normal;
-  text-transform: uppercase;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #27427E;
-  
-}
-section#about .container-about h2 {
-  grid-row: 3/4;
-  white-space: normal;
-  text-transform: uppercase;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 300;
-  font-size: 0.9rem;
-  color: #27427E;
-  transition: opacity .6s;
-}
-section#about .container-about p {
-  grid-row: 4/5;
-  white-space: normal;
-  font-family: Fira Sans;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 0.7rem;
-  color: #282E33;
-}
-section#about .container-title {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  height: auto;
-}
-section#about .container-title h1 {
-  text-transform: uppercase;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 600;
-  font-size: 4rem;
-  color: #FFFFFF;
-}
-section#about .container-title h2 {
-  text-transform: uppercase;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 500;
-  font-size: 3rem;
-  color: #FFFFFF;
-}
 
 /*===============================*/
 /* WHAT WE DO */
@@ -355,6 +191,7 @@ section#whatwedo .container-title h2 {
 
 
 /*===============================*/
+/* NUMBERS */
 section#numbers {
   padding: 3rem 1rem 2rem 1rem;
   width: 100%;
@@ -398,8 +235,285 @@ section#numbers .row .element h2 span{
   color: #1789FC;
   font-weight: bold;
 }
+/* ====================== */
+/* CLIENTES */
+section#clients {
+  width: 100%;
+  height: auto;
+  padding: 3rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+section#clients .container-title {
+  width: 400px;
+  vertical-align: middle;
+  align-content: center;
+}
+section#clients .container-title h1 {
+  color: #040A25;
+  text-align: left;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+section#clients .container-title p {
+  color: #040A25;
+  text-align: left;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  width: 80%;
 
+}
+section#clients .container-cliente {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: all 0.2s;
+}
+section#clients .container-cliente .container-carosel {
+  background-color: #FFFFFF;
+  width: 350px;
+  min-width: 290px;
+  max-height: 600px;
+  padding: 15px;
+  border-radius: 38px;
+  margin-right: 40px;
+  justify-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  align-content: center;
+  box-shadow: 2px 2px 2px 2px #888888;
+  overflow: hidden;
+}
+section#clients .container-cliente .container-carosel img.hero {
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 20px;
+}
+section#clients .container-cliente .container-carosel .container-data {
+  display: flex;
+  flex-direction: column;
+}
+section#clients .container-cliente .container-carosel .container-data h1 {
+  color: #27427E;
+  text-align: left;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
+section#clients .container-cliente .container-carosel .container-data ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: .9rem;
+}
+section#clients .container-cliente .container-carosel .container-data ul li {
+  text-align: left;
+  max-width: 95%;
+}
+section#clients .container-cliente .container-carosel .container-data ul img {
+  width: 25px;
+  margin-left: 0;
+  display: inline-flex;
+  padding-top: 0;
+}
+section#clients .container-cliente .container-carosel .container-result {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem 1rem 1rem;
+}
+section#clients .container-cliente .container-carosel .container-result div {
+  display: flex;
+  flex-direction: column;
+}
+section#clients .container-cliente .container-carosel .container-result div:first-child {
+  margin-right: 25px;
+}
+section#clients .container-cliente .container-carosel .container-result div h1 {
+  font-family: 'Fira Sans', sans-serif;
+  color: #1789FC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+section#clients .container-cliente .container-carosel .container-result h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  text-align: center;
+}
+section#clients .container-cliente .container-carosel .container-result div img{
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 0;
+}
+section#clients-2 {
+  width: 100%;
+  height: auto;
+  padding: 3rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+section#clients-2 .rows .container-cliente {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: all 0.2s;
+  margin-top: -5rem;
+}
+section#clients-2 .container-cliente .container-carosel {
+  background-color: #FFFFFF;
+  width: 350px;
+  min-width: 290px;
+  height: auto;
+  padding: 15px;
+  border-radius: 38px;
+  margin-right: 40px;
+  justify-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem !important;
+  align-content: center;
+  box-shadow: 2px 2px 2px 2px #888888;
+}
+section#clients-2 .container-cliente .container-carosel img.hero {
+  height: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 20px;
+}
+section#clients-2 .container-cliente .container-carosel .container-data {
+  display: flex;
+  flex-direction: column;
+}
+section#clients-2 .container-cliente .container-carosel .container-data h1 {
+  color: #27427E;
+  text-align: left;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
+section#clients-2 .container-cliente .container-carosel .container-data ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: .9rem;
+}
+section#clients-2 .container-cliente .container-carosel .container-data ul li {
+  text-align: left;
+  max-width: 95%;
+}
+section#clients-2 .container-cliente .container-carosel .container-data ul img {
+  width: 25px;
+  margin-left: 0;
+  display: inline-flex;
+  padding-top: 0;
+}
+section#clients-2 .container-cliente .container-carosel .container-result {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem 1rem 1rem;
+}
+section#clients-2 .container-cliente .container-carosel .container-result div {
+  display: flex;
+  flex-direction: column;
+}
+section#clients-2 .container-cliente .container-carosel .container-result div:first-child {
+  margin-right: 25px;
+}
+section#clients-2 .container-cliente .container-carosel .container-result div h1 {
+  font-family: 'Fira Sans', sans-serif;
+  color: #1789FC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+section#clients-2 .container-cliente .container-carosel .container-result h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
+}
+section#clients-2 .container-cliente .container-carosel .container-result div img{
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 0;
+}
+section#clients-2 .container-cliente .container-tambem-quero {
+  background-color: #FFFFFF;
+  width: 350px;
+  min-width: 290px;
+  height: auto;
+  padding: 15px;
+  border-radius: 38px;
+  margin-right: 40px;
+  justify-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem !important;
+  align-content: center;
+  box-shadow: 2px 2px 2px 2px #888888;
+}
+section#clients-2 .container-cliente .container-tambem-quero img.hero{
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 40px;
+}
+section#clients-2 .container-cliente .container-tambem-quero h1{
+  width: 100%;
+  padding: 2rem 1.25rem 2rem 1.25rem;
+  text-align: center;
+  color: #1789FC;
+  font-size: 2rem;
+}
+section#clients-2 .container-cliente .container-tambem-quero a{
+  display: inline-block;
+  text-align: center; 
+  margin-left: 25%; 
+  margin-right: 25%; 
+  overflow: visible;  
+  text-decoration: none;
+  color: #040A25;
+  font-size: 1.5rem;
+}
+section#clients-2 .container-cliente .container-tambem-quero a img{
+  height: 1.5rem;
+}
 
+/* ====================== */
 section#services {
   width: 100%;
   height: auto;
@@ -1161,8 +1275,8 @@ footer .container .social-medias a#copy {
   
   section#clients .container-cliente .container-carosel {
     background-color: #FFFFFF;
-    width: 350px;
-    min-width: 290px;
+    width: 80%;
+    min-width: 100px;
     height: 500px;
     padding: 15px;
     border-radius: 38px;

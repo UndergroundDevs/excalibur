@@ -599,7 +599,7 @@ export default function Home() {
           </div>
           <div className="social-medias">
             <img src={logoInstagram} alt="Instagram" />
-            <a target="_blank" href="https://www.instagram.com/androconsulta">@androconsult</a>
+            <a target="_blank" href="https://www.instagram.com/androconsulta">@androconsulta</a>
           </div>
           <div className="social-medias">
             <img src={logoMail} alt="Email" />
