@@ -133,11 +133,11 @@ section#whatwedo .container-about div.we {
 section#whatwedo .container-about div.we p {
   padding: 0 10px 10px 10px;
   text-align: justify;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
 }
 section#whatwedo .container-about .image img {
-  height: 150px;
-  margin-top: 20px;
+  height: 100px;
+  margin-top: 5px;
   fill: #1889FC !important;
 }
 section#whatwedo .container-about h1 {
@@ -161,7 +161,7 @@ section#whatwedo .container-about h2 {
   transition: opacity .6s;
 }
 section#whatwedo .container-about p {
-  grid-row: 4/5;
+  grid-row: 3/5;
   white-space: normal;
   font-family: Fira Sans;
   font-style: italic;
@@ -185,7 +185,7 @@ section#whatwedo .container-title h1 {
 section#whatwedo .container-title h2 {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
-  line-height: 0.9;
+  line-height: 1.3;
   font-size: 1.1rem;
   color: #FFFFFF;
   margin-top: 10px;
@@ -1072,19 +1072,22 @@ footer .container .social-medias a#copy {
   }
   section#home h1 {
     grid-column: 1/1;
-    grid-row: 2/3;
-    font-size: 3rem;
+    grid-row: 2/4;
+    font-size: 3.1rem;
     font-family: 'Fira Sans', sans-serif;
     text-align: left;
-    margin-top: -3rem;
-    font-weight: 500;
-    line-height: 3rem;
+    margin-top: -3.5rem;
+    font-weight: 800;
+    line-height: 4rem;
+    text-transform: uppercase;
+    width: 110%;
   }
   section#home .container-services h2 {
     text-align: left;
     max-width: 525px;
-    font-size: 1.2rem;
-    margin-top: -8rem;
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-top: -9rem;
   }
   section#home .container-services a {
     margin-top: 2.25rem;
@@ -1242,8 +1245,8 @@ footer .container .social-medias a#copy {
     min-height: 450px;
   }
   section#whatwedo .container-about div.we p {
-    font-size: 1.2rem;
-    line-height: 1.1;
+    font-size: 1.3rem !important;
+    line-height: 1.2;
     margin-top: -7rem;
     max-width: 80%;
     font-style: normal;
@@ -1670,7 +1673,7 @@ footer .container .social-medias a#copy {
     font-family: 'Fira Sans',sans-serif;
     text-align: left;
     font-size: 1rem;
-    padding: 10px 1rem 10px 1rem;
+    padding: 10px 0rem 10px 0rem;
 
   }
   section#service .row .container-services .container-carosel .container-data ul li{
@@ -1687,11 +1690,12 @@ footer .container .social-medias a#copy {
     flex-direction: row;
     background-color: #040A25;
     padding-bottom: 3rem;
+    padding-left: 0rem;
   }
   section#somos .description {
     display: inline-block;
-    width: 60%;
-    padding: 1rem 1rem 1rem 10%;
+    width: 80%;
+    padding: 1rem 1rem 1rem 7%;
     justify-content: left;
   }
   section#somos .description h1{
@@ -1712,12 +1716,13 @@ footer .container .social-medias a#copy {
     display: inline-block;
     width: auto;
     position: relative;
-    vertical-align: top;
     vertical-align: middle;
-    text-align: right;  
+    text-align: left; 
+    padding-top: 2rem; 
   }
   section#somos .leon img {
-    width:100%;
+    width: 75%;
+    height: auto;
   }
   section#somos .description a {
     width: 40%;
@@ -1744,7 +1749,7 @@ footer .container .social-medias a#copy {
     background-color: #040A25;
     width: 100%;
     height: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
   }
   section#partners h1.title{
     color: #fff;
@@ -1957,7 +1962,11 @@ footer .container .social-medias a#copy {
 
   section#whatwedo .container-about .image img {
     height: 100px;
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+  section#whatwedo .container-about div.we p {
+    font-size: 1rem;
+    margin-top: -2rem;
   }
 
   section#client .container-cliente .container-carosel img {
@@ -2037,7 +2046,7 @@ footer .container .social-medias a#copy {
   }
   section#services .container-services p {
     max-width: 150px;
-    text-align: center;
+    text-align: left;
     font-size: 0.8rem;
     padding-top: 10px;
     

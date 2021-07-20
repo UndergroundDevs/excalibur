@@ -32,12 +32,12 @@ import tech from '../assets/tech.svg';
 import comercial from '../assets/comercial.svg';
 import financeiro from '../assets/financeiro.svg';
 import processos from '../assets/processos.svg';
-import necessidades from '../assets/icons/image 4.svg';
-import solucoes from '../assets/icons/image 5.svg';
-import acoes from '../assets/icons/image 6.svg';
+import necessidades from '../assets/icons/mission.png';
+import solucoes from '../assets/icons/Vision.png';
+import acoes from '../assets/icons/Values.png';
 import projeto from '../assets/icons/image 8.svg';
 import number from '../assets/Group 6.svg';
-import mosaic from '../assets/Andro-mosaic.svg'
+import mosaic from '../assets/lion.png'
 
 // ICONS
 import carimbo from '../assets/icons/stamp (1).svg';
@@ -196,25 +196,39 @@ export default function Home() {
         </div>
         <Nav open={isOpenMenu} ref={myNav}>
           <a href="P-somos">Quem Somos</a>
-          <a href="P-whatdowedospecific">Como Trabalhamos</a>
+          <a href="P-service">Como Trabalhamos</a>
           <a href="P-clients">Clientes</a>
           <button onClick={onClickHeader}>Fale Conosco</button>
         </Nav>
       </Header>
       <section id="home">
-        <h1>A agilidade e eficiência que seu negócio precisa</h1>
+        <h1>A agilidade e estratégia que seu negócio precisa</h1>
         <div className="container-services">
           <h2>Somos uma empresa de prestação de serviços para quem já possui ou vai iniciar um negócio e necessita de soluções criativas em financeiro, marketing, pessoas, operacional ou estratégico.</h2>
           <a href="#contato">Solicite uma análise gratuita</a>
         </div>
         <img src={backgroundImage} alt="Leão representando a logo da empresa" />
       </section>
+      {/* =============== */}
+      {/* SOMOS A ANDRO */}
+      <section id="somos">
+        <div className="description">
+          <h1>Somos Andro.</h1>
+          <p>Levar conhecimento sobre estratégias e gestão às pequenas, médias e grandes empresas que buscam inovação e entendem a importância destes fatores para o sucesso de um negócio.</p>
+          <p>Com resultados obtidos adaptamos e reinventamos estratégias já existentes, formando uma nova metodologia de “quick results”, onde implementamos a cultura de pequenas vitórias, para o alcance do sucesso como um todo.</p>
+          <p>Todo esse processo depende  do coletivo, haver o real envolvimento do cliente em todas as inovações e decisões. Isso ajuda a identificar problemas específicos e a propor soluções reais para gerar os resultados positivos.</p>
+
+          <a href="#contato">QUERO SABER MAIS</a>
+        </div>
+        <div className="leon"><img src={mosaic} alt="reunião entre dirigentes com slide no fundo" /></div>
+      </section>
+      {/* =============== */}
 
       {/* <Navbar/> */}
 
       <section id="whatwedo">
         <div className="container-title">
-          <h1>O que nós fazemos?</h1>
+          <h1>Sobre nós</h1>
           <h2>Oferecemos mais que serviços, com entrega rápida e trabalho<br />humanizado, somos a melhor escolha para seu negócio.</h2>
         </div>
 
@@ -226,9 +240,9 @@ export default function Home() {
             <div className="image">
               <img src={necessidades} alt="necessidades" />
             </div>
-            <h1>Necessidades</h1>
+            <h1>Missão</h1>
             <p>
-              Levantar as dores e necessidades do cliente.
+            Identificar e compreender os reais interesses dos empreendedores e suas organizações, desenvolvendo e aplicando um conjunto estratégias, sustentando a eficiência na execução. 
             </p>
           </div>
 
@@ -236,9 +250,8 @@ export default function Home() {
             <div className="image">
               <img src={solucoes} alt="necessidades" />
             </div>
-            <h1>Soluções</h1>
-            <p>
-              Identificar todas as possibilidades de soluções e avaliar cada questão em específico.
+            <h1>Visão</h1>
+            <p>Ser reconhecido como umas das maiores empresas diferenciadas em estratégias eficientes e com rapidez no alcance de resultados.
             </p>
           </div>
 
@@ -246,19 +259,14 @@ export default function Home() {
             <div className="image">
               <img src={acoes} alt="acoes" />
             </div>
-            <h1>Ações</h1>
+            <h1>valores</h1>
             <p>
-              Recomendar ações de curto e longo prazos, a fim de gerar negócios e reduzir custos.
-            </p>
-          </div>
-
-          <div className="we">
-            <div className="image">
-              <img src={projeto} alt="necessidades" />
-            </div>
-            <h1>Projeto</h1>
-            <p>
-              Desenvolver, implantar e viabilizar o projeto de acordo com as metas de cada cliente.
+            • Simplicidade<br/>
+            • Respeito às pessoas<br/>
+            • Visão de dono<br/>
+            • Transparência<br/>
+            • Senso de urgência<br/>
+            • Foco no resultado
             </p>
           </div>
         </div>
@@ -275,16 +283,69 @@ export default function Home() {
             <h2><span>Identidades Visuais</span> criadas</h2>
           </div>
           <div className="element">
-            <h1>+1K</h1>
-            <h2><span>Seguidores</span> nas redes sociais</h2>
+            <h1>+500H</h1>
+            <h2><span>Dedicadas</span> 
+            <br/>à clientes</h2>
           </div>
         </div>
       </section>
+      {/* SERVIÇOS */}
+      <section id="service">
+        <div className='container-title'>
+          <h1>Serviços</h1>
+          <p>Oferecemos o serviço que seu negócio necessita. Para um serviço personalizado, entre em contato.</p>
+        </div>
+        <div className="row">
+          <div className="container-services">
+            <div className="container-carosel">
+              <img className='hero' src={consEmpresa} alt="peças de xadrez" />
+              <div className="container-data">
+                <h1>Gestão Estratégica</h1>
+                <ul>
+                  <li>Diagnósticos: Econômicos, Financeiro e Operacional</li>
+                  <li>Áreas funcionais : Marketing, operação Pessoas e Finanças</li>
+                  <li>Definições de Missão, Visão e Valores</li>
+                  <li>Plano de Ação </li>
+                </ul>
+              </div>
+            </div>
+            <div className="container-carosel">
+              <img className='hero' src={invoice} alt="peças de xadrez" />
+              <div className="container-data">
+                <h1>Consultoria por área especifica</h1>
+                <ul>
+                  <li>Finanças</li>
+                  <br/>
+                  <li>Marketing</li>
+                  <br/>
+                  <li>Operação</li>
+                  <br/>
+                  <li>Pessoas</li>
+                </ul>
+              </div>
+            </div>
+            <div className="container-carosel">
+              <img className='hero' src={departamentos} alt="post its" />
+              <div className="container-data">
+                <h1>Gestão de Risco & Consultoria Técnica</h1>
+                <p>Tem função de apontar e analisar os possíveis riscos que a empresa poderá enfrentar.</p>
+                <ul>
+                  <li>Assessoria Jurídica</li>
+                  <li>Assistência contábil</li>
+                  <li>Terceirização de departamentos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      {/* =============== */}
 
       {/* NOSSOS CLIENTES */}
       <section id="clients">
         <div className='container-title'>
-          <h1>Nossos Clientes</h1>
+          <h1>Cases de Sucesso</h1>
           <p>Conheça nossos clientes que tiveram seu negócio transformado!</p>
         </div>
         <div className="rows">
@@ -400,69 +461,7 @@ export default function Home() {
         </div>
       </section>
       {/* =============== */}
-      {/* SERVIÇOS */}
-      <section id="service">
-        <div className='container-title'>
-          <h1>Serviços</h1>
-          <p>Oferecemos o serviço que seu negócio necessita. Para um serviço personalizado, entre em contato.</p>
-        </div>
-        <div className="row">
-          <div className="container-services">
-            <div className="container-carosel">
-              <img className='hero' src={consEmpresa} alt="peças de xadrez" />
-              <div className="container-data">
-                <h1>Consultoria
-                  Empresarial</h1>
-                <p>Através de análise e pesquisa, planejamos o melhor meio de gerenciar o seu projeto tornando-o mais eficaz e qualificado a atuação no mercado atual.</p>
-              </div>
-            </div>
-            <div className="container-carosel">
-              <img className='hero' src={departamentos} alt="post its" />
-              <div className="container-data">
-                <h1>Assessoria de Departamentos</h1>
-                <ul>
-                  Terceirização de serviços
-                  <li>Administrativo</li>
-                  <li>Financeiro</li>
-                  <li>Comercial</li>
-                  <li>Marketing Digital / Social Media</li>
-                  <li>Recursos Humanos / Departamento pessoal</li>
-                </ul>
-              </div>
-            </div>
-            <div className="container-carosel">
-              <img className='hero' src={invoice} alt="peças de xadrez" />
-              <div className="container-data">
-                <h1>Assesoria Plus+</h1>
-                <ul>
-                  <li>Treinamento</li>
-                  <ul>
-                    <li>Vendas</li>
-                    <li>Inovações Tecnológicas</li>
-                    <li>Clima organizacional</li>
-                  </ul>
-                  <li>Serviços de Contabilidade</li>
-                  <li>Assessoria Jurídica</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      {/* =============== */}
-      {/* SOMOS A ANDRO */}
-      <section id="somos">
-        <div className="description">
-          <h1>Somos Andro.</h1>
-          <p>Nosso objetivo é levar estratégias e gestão à empresas que buscam inovação e entendem a importância destes fatores para o sucesso do negócio. Com nossos resultados adaptamos e reinventamos estratégias já existentes, gerando uma nova metodologia, onde implementamos a cultura de pequenas vitórias, para o alcance do sucesso como um todo.</p>
-          <p>Todo esse processo depende  do coletivo com real envolvimento do cliente em todas as inovações e decisões. Isso ajuda a identificar problemas específicos e a propor soluções reais para gerar os resultados positivos.</p>
-
-          <a href="#contact">QUERO SABER MAIS</a>
-        </div>
-        <div className="leon"><img src={mosaic} alt="reunião entre dirigentes com slide no fundo" /></div>
-      </section>
-      {/* =============== */}
+      
       {/* PARCEIROS */}
       <section id="partners">
         <h1 className="title">nossos parceiros</h1>
@@ -483,7 +482,7 @@ export default function Home() {
       </section>
       {/* =============== */}
       {/* WHAT WE DO SPECIFIC*/}
-      <section id="whatdowedospecific">
+      {/* <section id="whatdowedospecific">
         <h1 className="title">O que nós fazemos?</h1>
         <div className="row">
           <div className="container-carosel">
@@ -564,7 +563,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* =============== */}
       {/* CONTACT */}
       <section id="contato">
@@ -599,7 +598,7 @@ export default function Home() {
           </div>
           <div className="social-medias">
             <img src={logoInstagram} alt="Instagram" />
-            <a target="_blank" href="https://www.instagram.com/androconsulta">@androconsulta</a>
+            <a target="_blank" href="https://www.instagram.com/androconsult">@androconsulta</a>
           </div>
           <div className="social-medias">
             <img src={logoMail} alt="Email" />
